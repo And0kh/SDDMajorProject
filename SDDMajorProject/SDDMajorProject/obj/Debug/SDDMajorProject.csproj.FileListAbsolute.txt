@@ -1,0 +1,10 @@
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.exe.config
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.exe
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.pdb
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.csprojResolveAssemblyReference.cache
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.MainForm.resources
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.Properties.Resources.resources
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.csproj.GenerateResource.cache
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.csproj.CoreCompileInputs.cache
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.exe
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.pdb
