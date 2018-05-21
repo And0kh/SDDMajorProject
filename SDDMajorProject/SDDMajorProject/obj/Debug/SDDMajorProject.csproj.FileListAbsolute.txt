@@ -8,3 +8,4 @@ W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.csproj.CoreCompileInputs.cache
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.exe
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.pdb
+W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.MainWindow.resources
