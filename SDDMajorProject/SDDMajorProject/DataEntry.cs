@@ -22,6 +22,11 @@ namespace SDDMajorProject
 
         }
 
-        private void;
+        private void isOthrSlctd(object sender, System.EventArgs e)
+        {
+            
+        }
+        //public cmboBxEvnt();
+        //System.Windows.Forms.ComboBox.
     }
 }
