@@ -33,5 +33,18 @@ namespace SDDMajorProject
                 txtBxOthr.Visible = false;
             }
         }
+
+        //Upon clicking the "Confirm" button, the panels change.
+        private void btnCnfm_Click(object sender, EventArgs e)
+        {
+            pnlEvnt.Visible = false;
+            pnlDtls.Visible = true;
+            pnlDtls.Location = new Point(12, 12);
+
+            //Load relevent events for the day
+            if (false){
+
+            }
+        }
     }
 }

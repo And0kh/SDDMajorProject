@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlDtls = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -39,32 +39,33 @@
             this.lblSdntAge = new System.Windows.Forms.Label();
             this.txtBxSdntName = new System.Windows.Forms.TextBox();
             this.lblSdntName = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlEvnt = new System.Windows.Forms.Panel();
+            this.btnCnfm = new System.Windows.Forms.Button();
             this.txtBxOthr = new System.Windows.Forms.TextBox();
             this.cmboBxEvnt = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.pnlDtls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.pnlEvnt.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlDtls
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.cmboBxEvnts);
-            this.panel1.Controls.Add(this.lblEvnt);
-            this.panel1.Controls.Add(this.cmboBxAge);
-            this.panel1.Controls.Add(this.lblSdntAge);
-            this.panel1.Controls.Add(this.txtBxSdntName);
-            this.panel1.Controls.Add(this.lblSdntName);
-            this.panel1.Location = new System.Drawing.Point(218, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 194);
-            this.panel1.TabIndex = 10;
+            this.pnlDtls.Controls.Add(this.textBox1);
+            this.pnlDtls.Controls.Add(this.label2);
+            this.pnlDtls.Controls.Add(this.numericUpDown1);
+            this.pnlDtls.Controls.Add(this.label1);
+            this.pnlDtls.Controls.Add(this.cmboBxEvnts);
+            this.pnlDtls.Controls.Add(this.lblEvnt);
+            this.pnlDtls.Controls.Add(this.cmboBxAge);
+            this.pnlDtls.Controls.Add(this.lblSdntAge);
+            this.pnlDtls.Controls.Add(this.txtBxSdntName);
+            this.pnlDtls.Controls.Add(this.lblSdntName);
+            this.pnlDtls.Location = new System.Drawing.Point(218, 12);
+            this.pnlDtls.Name = "pnlDtls";
+            this.pnlDtls.Size = new System.Drawing.Size(287, 194);
+            this.pnlDtls.TabIndex = 10;
+            this.pnlDtls.Visible = false;
             // 
             // textBox1
             // 
@@ -199,16 +200,26 @@
             this.lblSdntName.TabIndex = 10;
             this.lblSdntName.Text = "Name of student";
             // 
-            // panel2
+            // pnlEvnt
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.txtBxOthr);
-            this.panel2.Controls.Add(this.cmboBxEvnt);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 194);
-            this.panel2.TabIndex = 11;
+            this.pnlEvnt.Controls.Add(this.btnCnfm);
+            this.pnlEvnt.Controls.Add(this.txtBxOthr);
+            this.pnlEvnt.Controls.Add(this.cmboBxEvnt);
+            this.pnlEvnt.Controls.Add(this.label3);
+            this.pnlEvnt.Location = new System.Drawing.Point(12, 12);
+            this.pnlEvnt.Name = "pnlEvnt";
+            this.pnlEvnt.Size = new System.Drawing.Size(200, 194);
+            this.pnlEvnt.TabIndex = 11;
+            // 
+            // btnCnfm
+            // 
+            this.btnCnfm.Location = new System.Drawing.Point(53, 123);
+            this.btnCnfm.Name = "btnCnfm";
+            this.btnCnfm.Size = new System.Drawing.Size(90, 23);
+            this.btnCnfm.TabIndex = 6;
+            this.btnCnfm.Text = "Confirm";
+            this.btnCnfm.UseVisualStyleBackColor = true;
+            this.btnCnfm.Click += new System.EventHandler(this.btnCnfm_Click);
             // 
             // txtBxOthr
             // 
@@ -227,7 +238,7 @@
             "Swimming carnival",
             "Athletics carnival",
             "Cross country",
-            "Other"});
+            "Other (enter below)"});
             this.cmboBxEvnt.Location = new System.Drawing.Point(25, 50);
             this.cmboBxEvnt.Name = "cmboBxEvnt";
             this.cmboBxEvnt.Size = new System.Drawing.Size(155, 28);
@@ -244,37 +255,28 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Event day";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(53, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Confrim";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlEvnt);
+            this.Controls.Add(this.pnlDtls);
             this.Name = "MainForm";
             this.Text = "Time sorter";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlDtls.ResumeLayout(false);
+            this.pnlDtls.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlEvnt.ResumeLayout(false);
+            this.pnlEvnt.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlDtls;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -285,11 +287,11 @@
         private System.Windows.Forms.Label lblSdntAge;
         private System.Windows.Forms.TextBox txtBxSdntName;
         private System.Windows.Forms.Label lblSdntName;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlEvnt;
         private System.Windows.Forms.ComboBox cmboBxEvnt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBxOthr;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCnfm;
     }
 }
 
