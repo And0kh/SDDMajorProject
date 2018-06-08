@@ -41,6 +41,9 @@ namespace SDDMajorProject
             pnlDtls.Visible = true;
             pnlDtls.Location = new Point(12, 12);
 
+            //Testing
+            FileHandler.Read();
+
             //Load relevent events for the day
             if (false){
 

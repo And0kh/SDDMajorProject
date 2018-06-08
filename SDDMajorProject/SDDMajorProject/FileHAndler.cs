@@ -8,9 +8,10 @@ namespace SDDMajorProject
 {
     class FileHandler
     {
-        static void Read()
+        public static void Read(/*string Event*/)
         {
-
+            string text = System.IO.File.ReadAllText(@"W:\");
+            Console.WriteLine(text);
         }
 
         static void Write()
