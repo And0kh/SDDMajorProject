@@ -37,12 +37,12 @@ namespace SDDMajorProject
         //Upon clicking the "Confirm" button, the panels change.
         private void btnCnfm_Click(object sender, EventArgs e)
         {
+            string slctedOptn = (cmboBxEvnt.SelectedItem).ToString();
+            FileHandler.Read(slctedOptn);
+
             pnlEvnt.Visible = false;
             pnlDtls.Visible = true;
             pnlDtls.Location = new Point(12, 12);
-
-            //Testing
-            FileHandler.Read();
 
             //Load relevent events for the day
             if (false){

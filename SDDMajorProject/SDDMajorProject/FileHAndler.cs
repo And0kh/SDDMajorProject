@@ -8,9 +8,10 @@ namespace SDDMajorProject
 {
     class FileHandler
     {
-        public static void Read(/*string Event*/)
+        public static void Read(string Event)
         {
-            string text = System.IO.File.ReadAllText(@"W:\");
+            string path = @"W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\Events\"+ Event +".txt";
+            string text = System.IO.File.ReadAllText(path);
             Console.WriteLine(text);
         }
 

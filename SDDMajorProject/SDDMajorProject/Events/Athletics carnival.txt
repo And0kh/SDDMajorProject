@@ -1,0 +1,10 @@
+﻿Running 100m
+Running 200m
+Running 400m
+Running 800m
+Running 1500m
+High jump
+Long jump
+Shot put
+Javelin
+Discus

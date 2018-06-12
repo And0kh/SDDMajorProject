@@ -42,18 +42,27 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDDMajorProject.exe" size="14256">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDDMajorProject.exe" size="14768">
       <assemblyIdentity name="SDDMajorProject" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OM3BAvHMP1EhTG7jWv6VIkb9Imm2WnayPbleeyG5cBE=</dsig:DigestValue>
+        <dsig:DigestValue>GH2owZAn9Elf7BowMTbLXSt/KV+UEQgagEJLYUNv78s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Events\Athletics.txt" size="3">
+  <file name="Events\Athletics carnival.txt" size="121">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yy1zb70k4Zpf3Cozl+l2wh+BuyhpduqKmnA63OQ6XV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Events\Cross country.txt" size="3">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
@@ -62,22 +71,13 @@
       <dsig:DigestValue>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Events\CrossCountry.txt" size="3">
+  <file name="Events\Swimming carnival.txt" size="51">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Events\Swimming.txt" size="3">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</dsig:DigestValue>
+      <dsig:DigestValue>neH1QXI0SAUAmx1HEqW1mM+lrTrKfz/lUO8YuJ0nV9c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SDDMajorProject.exe.config" size="189">

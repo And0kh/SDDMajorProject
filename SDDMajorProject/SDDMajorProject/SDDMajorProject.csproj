@@ -120,9 +120,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Events\Athletics.txt" />
-    <Content Include="Events\CrossCountry.txt" />
-    <Content Include="Events\Swimming.txt" />
+    <Content Include="Events\Athletics carnival.txt" />
+    <Content Include="Events\Cross country.txt" />
+    <Content Include="Events\Swimming carnival.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
