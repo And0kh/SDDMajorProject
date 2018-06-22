@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//using System.IO;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace SDDMajorProject
@@ -11,12 +11,18 @@ namespace SDDMajorProject
     {
         public static void Read(string Event)
         {
-            //string path = @"W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\Events\"+ Event +".txt";
-            //string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data\Names.txt");
-            string path = System.Reflection.Assembly.GetEntryAssembly().Location;
-            if (path.GetDirectories)
-            string text = System.IO.File.ReadAllText(path);
-            Console.WriteLine(path);
+            //gets the path with the name of the executable in it
+            //string path = System.Reflection.Assembly.GetEntryAssembly().Location;
+
+            //Gets the name of the folder the executbale is in(help from https://dailydotnettips.com/different-ways-of-getting-path/)
+            string ExePath = AppDomain.CurrentDomain.BaseDirectory;
+            Console.WriteLine("Current directory:"+ ExePath);
+
+            //Check if the events folder is in the same location as the executable
+            if (Directory.Exists(ExePath + "\\Events")){
+                
+            }
+
         }
 
         static void Write()
