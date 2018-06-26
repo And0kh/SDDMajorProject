@@ -38,9 +38,10 @@ namespace SDDMajorProject
         private void btnCnfm_Click(object sender, EventArgs e){
             string slctedOptn;
             if (cmboBxEvnt.SelectedItem != null){
+                //Assigns the name of the selected option in the combp box to a string
                 slctedOptn = cmboBxEvnt.SelectedItem.ToString();
-            //}
-            //if (slctedOptn != null){
+
+                //Load the file for the selected event by using the FileHandler class
                 FileHandler.Read(slctedOptn);
 
                 pnlEvnt.Visible = false;

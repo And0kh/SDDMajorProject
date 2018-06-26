@@ -16,13 +16,16 @@ namespace SDDMajorProject
 
             //Gets the name of the folder the executbale is in(help from https://dailydotnettips.com/different-ways-of-getting-path/)
             string ExePath = AppDomain.CurrentDomain.BaseDirectory;
-            Console.WriteLine("Current directory:"+ ExePath);
+            string EvntsPth;
+            Console.WriteLine("Current directory:" + ExePath);
 
             //Check if the events folder is in the same location as the executable
             if (Directory.Exists(ExePath + "\\Events")){
-                
+                EvntsPth = ExePath + "\\Events";
+                Console.WriteLine(EvntsPth);
+            }else{
+                Console.WriteLine("Events folder not located in " + EvntsPth);
             }
-
         }
 
         static void Write()
