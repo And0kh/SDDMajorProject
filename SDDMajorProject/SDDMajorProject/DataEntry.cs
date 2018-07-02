@@ -48,6 +48,9 @@ namespace SDDMajorProject
                 pnlDtls.Visible = true;
                 pnlDtls.Location = new Point(12, 12);
             }
+            else{
+                MessageBox.Show("Please select an event");
+            }
         }
     }
 }
