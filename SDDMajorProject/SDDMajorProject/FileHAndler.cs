@@ -15,18 +15,18 @@ namespace SDDMajorProject
 
             //Gets the name of the folder the executbale is in(help from https://dailydotnettips.com/different-ways-of-getting-path/)
             string ExePath = AppDomain.CurrentDomain.BaseDirectory;
-            string EvntsPth = ExePath;
+            string EvntsPth = Path.Combine(ExePath, "Events");//Creating a new directory https://msdn.microsoft.com/en-us/library/system.io.path.combine.aspx
             Console.WriteLine("Current directory:" + ExePath);
             string FlPth = "";
             string FlText = "";
 
             //Check if the "Events" folder is in the same location as the executable
-            if (Directory.Exists(Path.Combine(ExePath, "Events"))){ //Creating a new directory https://msdn.microsoft.com/en-us/library/system.io.path.combine.aspx
-                EvntsPth = Path.Combine(ExePath, "Events");//Creates a string which the events folder directory
+            Console.WriteLine("Checking in " + EvntsPth);
+            if (Directory.Exists(EvntsPth)){ 
                 Console.WriteLine("Loading event details from "+ EvntsPth);
-                FlPth = Path.Combine(EvntsPth, Event, @".txt");//Creates a string with the relevent txt file's directory path
+                FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
                 FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
-                Console.WriteLine(FlText);//For testing purposes
+                Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
             }else{
                 Console.WriteLine("Events folder not located in " + ExePath + "\nTrying a different location.");
 
@@ -34,12 +34,16 @@ namespace SDDMajorProject
                 //This is mainly used during the development process
                 EvntsPth = Path.GetFullPath(Path.Combine(ExePath, @"..\..\"));//Goes up two levels/directories
                 Console.WriteLine("Trying in " + EvntsPth);
-                if (Directory.Exists(Path.Combine(EvntsPth, "Events"))){//Checks to see if the "Events" folder is present
-                    EvntsPth = Path.Combine(ExePath, "Events");//Creates a string with the directory path
+                EvntsPth = Path.Combine(EvntsPth, "Events");
+
+                if (Directory.Exists(EvntsPth)){ //Checks to see if the "Events" folder is present
                     Console.WriteLine("Loading event details from " + EvntsPth);//For testing purposes
-                    FlPth = Path.Combine(EvntsPth, Event, @".txt");//Creates a string with the relevent txt file's directory path
+                    FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
                     FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
-                    Console.WriteLine(FlText);//For testing purposes
+                    Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
+                }
+                else{
+                    System.Windows.Forms.MessageBox.Show("Could not load events file.");
                 }
             }
 

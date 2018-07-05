@@ -24,3 +24,17 @@ W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.application
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.exe.manifest
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.application
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.exe.config
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.exe.manifest
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.application
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.exe
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Debug\SDDMajorProject.pdb
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.csprojResolveAssemblyReference.cache
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.MainForm.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.MainWindow.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.Properties.Resources.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.csproj.GenerateResource.Cache
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.exe.manifest
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.application
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.exe
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.pdb
