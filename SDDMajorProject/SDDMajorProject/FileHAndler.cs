@@ -20,27 +20,29 @@ namespace SDDMajorProject
             string FlPth = "";
             string FlText = "";
 
-            //Check if the events folder is in the same location as the executable
+            //Check if the "Events" folder is in the same location as the executable
             if (Directory.Exists(Path.Combine(ExePath, "Events"))){ //Creating a new directory https://msdn.microsoft.com/en-us/library/system.io.path.combine.aspx
-                EvntsPth = Path.Combine(ExePath, "Events");
+                EvntsPth = Path.Combine(ExePath, "Events");//Creates a string which the events folder directory
                 Console.WriteLine("Loading event details from "+ EvntsPth);
-                FlPth = Path.Combine(EvntsPth, Event, @".txt");
-                FlText = System.IO.File.ReadAllText(FlPth);
-                Console.WriteLine(FlText);
+                FlPth = Path.Combine(EvntsPth, Event, @".txt");//Creates a string with the relevent txt file's directory path
+                FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
+                Console.WriteLine(FlText);//For testing purposes
             }else{
                 Console.WriteLine("Events folder not located in " + ExePath + "\nTrying a different location.");
+
+                //Checks to see if the "Events" folder is in the visual studio solution folder
+                //This is mainly used during the development process
+                EvntsPth = Path.GetFullPath(Path.Combine(ExePath, @"..\..\"));//Goes up two levels/directories
+                Console.WriteLine("Trying in " + EvntsPth);
+                if (Directory.Exists(Path.Combine(EvntsPth, "Events"))){//Checks to see if the "Events" folder is present
+                    EvntsPth = Path.Combine(ExePath, "Events");//Creates a string with the directory path
+                    Console.WriteLine("Loading event details from " + EvntsPth);//For testing purposes
+                    FlPth = Path.Combine(EvntsPth, Event, @".txt");//Creates a string with the relevent txt file's directory path
+                    FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
+                    Console.WriteLine(FlText);//For testing purposes
+                }
             }
 
-
-            EvntsPth = Path.GetFullPath(Path.Combine(ExePath, @"..\..\"));
-            Console.WriteLine("Trying in " + EvntsPth);
-            if (Directory.Exists(Path.Combine(EvntsPth, "Events"))){
-                EvntsPth = Path.Combine(ExePath, "Events");
-                Console.WriteLine("Loading event details from " + EvntsPth);
-                FlPth = Path.Combine(EvntsPth, Event, @".txt");
-                FlText = System.IO.File.ReadAllText(FlPth);
-                Console.WriteLine(FlText);
-            }
         }
 
         //string path = @"W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\Events\" + Event + ".txt";
