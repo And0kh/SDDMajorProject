@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Windows.Forms;
 using System.Threading.Tasks;
 
 namespace SDDMajorProject
 {
     class FileHandler
     {
+        public static void FilePresent(){
+            string ExePath;
+        }
+
         public static void Read(string Event){
             //gets the path with the name of the executable in it
             //string path = System.Reflection.Assembly.GetEntryAssembly().Location;
@@ -25,9 +30,15 @@ namespace SDDMajorProject
             if (Directory.Exists(EvntsPth)){ 
                 Console.WriteLine("Loading event details from "+ EvntsPth);
                 FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
-                FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
-                Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-            }else{
+                if (File.Exists(FlPth)){
+                    FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
+                    Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
+                }else
+                {
+                    MessageBox.Show("Could not load events file.");
+                }
+            }
+            else{
                 Console.WriteLine("Events folder not located in " + ExePath + "\nTrying a different location.");
 
                 //Checks to see if the "Events" folder is in the visual studio solution folder
@@ -39,11 +50,18 @@ namespace SDDMajorProject
                 if (Directory.Exists(EvntsPth)){ //Checks to see if the "Events" folder is present
                     Console.WriteLine("Loading event details from " + EvntsPth);//For testing purposes
                     FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
-                    FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
-                    Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
+
+                    if (File.Exists(FlPth)){
+                        FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
+                        Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
+                    }else
+                    {
+                        Console.WriteLine("Relevent .txt file not prsent.");
+                    }
+
                 }
                 else{
-                    System.Windows.Forms.MessageBox.Show("Could not load events file.");
+                    MessageBox.Show("Could not load events file.");
                 }
             }
 
