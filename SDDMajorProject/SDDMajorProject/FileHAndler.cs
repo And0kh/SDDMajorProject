@@ -26,8 +26,8 @@ namespace SDDMajorProject
             string FlText = "";
 
             //Check if the "Events" folder is in the same location as the executable
-            Console.WriteLine("Checking in " + EvntsPth);
-            if (Directory.Exists(EvntsPth)){ 
+            if (Directory.Exists(EvntsPth)){
+                Console.WriteLine("Checking in " + EvntsPth);
                 Console.WriteLine("Loading event details from "+ EvntsPth);
                 FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
                 if (File.Exists(FlPth)){

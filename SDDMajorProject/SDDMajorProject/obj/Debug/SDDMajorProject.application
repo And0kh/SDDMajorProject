@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SDDMajorProject.exe.manifest" size="4709">
+    <dependentAssembly dependencyType="install" codebase="SDDMajorProject.exe.manifest" size="3899">
       <assemblyIdentity name="SDDMajorProject.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>A5lreW5ffffUJD5Ou/GIrInsAzqRPW6KW449lFjrOM8=</dsig:DigestValue>
+        <dsig:DigestValue>6kYFV9zh3i3QXmRopI7H/0G4qJ6ZvvVv0kgzr0zqMi4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

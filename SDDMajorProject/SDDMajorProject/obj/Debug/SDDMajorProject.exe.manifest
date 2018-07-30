@@ -42,26 +42,17 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDDMajorProject.exe" size="15792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDDMajorProject.exe" size="16304">
       <assemblyIdentity name="SDDMajorProject" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EBDRVwUFn+VwtJuOWkhCFLmJ0gw/sE3SDFtnPIplYEM=</dsig:DigestValue>
+        <dsig:DigestValue>hDvl8ypRaThWkrfkDDU4U34wjmAhx1JQh3MSBTN+wSg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Events\Athletics carnival.txt" size="121">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>yy1zb70k4Zpf3Cozl+l2wh+BuyhpduqKmnA63OQ6XV4=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="Events\Cross country.txt" size="3">
     <hash>
       <dsig:Transforms>
@@ -69,15 +60,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Events\Swimming carnival.txt" size="51">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>neH1QXI0SAUAmx1HEqW1mM+lrTrKfz/lUO8YuJ0nV9c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SDDMajorProject.exe.config" size="189">

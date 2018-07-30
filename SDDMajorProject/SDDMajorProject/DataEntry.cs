@@ -26,7 +26,7 @@ namespace SDDMajorProject
         private void isOthrSlctd(object sender, System.EventArgs e){
             string slctdOptn = (cmboBxEvnt.SelectedItem).ToString();/*Assigning to slctdOptn the selected option if the combo box
             https://stackoverflow.com/a/18830040 */
-            if (slctdOptn == "Other"){
+            if (slctdOptn == "Other (enter below)"){
                 txtBxOthr.Visible = true;
             }
             else{
