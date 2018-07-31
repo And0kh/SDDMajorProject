@@ -73,5 +73,9 @@ namespace SDDMajorProject
         static void Write(){
 
         }
+
+        static void ChangeEvents(string events){
+
+        }
     }
 }
