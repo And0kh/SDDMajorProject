@@ -75,7 +75,7 @@ namespace SDDMajorProject
         }
 
         static void ChangeEvents(string events){
-
+            
         }
     }
 }

@@ -52,5 +52,9 @@ namespace SDDMajorProject
                 MessageBox.Show("Please select an event");
             }
         }
+
+        public static void ChangeEvents(string events){
+            cmboBxEvnts.Items.Add(events);
+        }
     }
 }
