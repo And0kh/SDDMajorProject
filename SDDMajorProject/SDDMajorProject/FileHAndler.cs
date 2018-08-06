@@ -33,7 +33,9 @@ namespace SDDMajorProject
                 if (File.Exists(FlPth)){
                     FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
                     Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-                }else
+                    ChangeEvents(FlText);
+                }
+                else
                 {
                     MessageBox.Show("Could not load events file.");
                 }
@@ -54,7 +56,9 @@ namespace SDDMajorProject
                     if (File.Exists(FlPth)){
                         FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
                         Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-                    }else
+                        ChangeEvents(FlText);
+                    }
+                    else
                     {
                         Console.WriteLine("Relevent .txt file not prsent.");
                     }
@@ -74,8 +78,15 @@ namespace SDDMajorProject
 
         }
 
-        static void ChangeEvents(string events){
-            
+        public static void ChangeEvents(string events){
+            //cmboBxEvnts.Items.Add(events);
+            ComboBox cmboBxEvnts = new ComboBox();
+            System.Object[] ItemObject = new System.Object[10];
+            for (int i = 0; i <= 9; i++)
+            {
+                ItemObject[i] = "Item" + i;
+            }
+            cmboBxEvnts.Items.AddRange(ItemObject);
         }
     }
 }

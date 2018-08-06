@@ -122,17 +122,6 @@
             // 
             this.cmboBxEvnts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmboBxEvnts.FormattingEnabled = true;
-            this.cmboBxEvnts.Items.AddRange(new object[] {
-            "Running 100m",
-            "Running 200m",
-            "Running 400m",
-            "Running 800m",
-            "Running 1500m",
-            "High jump",
-            "Long jump",
-            "Shot put",
-            "Javelin",
-            "Discus"});
             this.cmboBxEvnts.Location = new System.Drawing.Point(3, 31);
             this.cmboBxEvnts.Name = "cmboBxEvnts";
             this.cmboBxEvnts.Size = new System.Drawing.Size(120, 28);
@@ -281,7 +270,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmboBxEvnts;
         private System.Windows.Forms.Label lblEvnt;
         private System.Windows.Forms.ComboBox cmboBxAge;
         private System.Windows.Forms.Label lblSdntAge;
@@ -292,6 +280,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBxOthr;
         private System.Windows.Forms.Button btnCnfm;
+        public System.Windows.Forms.ComboBox cmboBxEvnts;
     }
 }
 

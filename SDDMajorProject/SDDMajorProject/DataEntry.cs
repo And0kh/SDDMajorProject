@@ -43,6 +43,7 @@ namespace SDDMajorProject
 
                 //Load the file for the selected event by using the FileHandler class
                 FileHandler.Read(slctedOptn);
+                ChangeEvents("evenyhc");
 
                 pnlEvnt.Visible = false;
                 pnlDtls.Visible = true;
@@ -53,8 +54,14 @@ namespace SDDMajorProject
             }
         }
 
-        public static void ChangeEvents(string events){
-            cmboBxEvnts.Items.Add(events);
+        public void ChangeEvents(string events){
+            //cmboBxEvnts.Items.Add(events);
+            System.Object[] ItemObject = new System.Object[10];
+            for (int i = 0; i <= 9; i++)
+            {
+                ItemObject[i] = "Item" + i;
+            }
+            cmboBxEvnts.Items.AddRange(ItemObject);
         }
     }
 }
