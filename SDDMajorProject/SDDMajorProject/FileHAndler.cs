@@ -14,7 +14,7 @@ namespace SDDMajorProject
             string ExePath;
         }
 
-        public static void Read(string Event){
+        public string Read(string Event){
             //gets the path with the name of the executable in it
             //string path = System.Reflection.Assembly.GetEntryAssembly().Location;
 
@@ -33,11 +33,13 @@ namespace SDDMajorProject
                 if (File.Exists(FlPth)){
                     FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
                     Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-                    ChangeEvents(FlText);
+                    //ChangeEvents(FlText);
+                    return FlText;
                 }
                 else
                 {
                     MessageBox.Show("Could not load events file.");
+                    return null;
                 }
             }
             else{
@@ -56,16 +58,19 @@ namespace SDDMajorProject
                     if (File.Exists(FlPth)){
                         FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
                         Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-                        ChangeEvents(FlText);
+                        //ChangeEvents(FlText);
+                        return FlText;
                     }
                     else
                     {
                         Console.WriteLine("Relevent .txt file not prsent.");
+                        return null;
                     }
 
                 }
                 else{
                     MessageBox.Show("Could not load events file.");
+                    return null;
                 }
             }
 

@@ -37,12 +37,13 @@ namespace SDDMajorProject
         //Upon clicking the "Confirm" button, the panels change.
         private void btnCnfm_Click(object sender, EventArgs e){
             string slctedOptn;
+            //string events;
             if (cmboBxEvnt.SelectedItem != null){
                 //Assigns the name of the selected option in the combp box to a string
                 slctedOptn = cmboBxEvnt.SelectedItem.ToString();
 
                 //Load the file for the selected event by using the FileHandler class
-                FileHandler.Read(slctedOptn);
+                string events = FileHandler.Read(slctedOptn);
                 ChangeEvents("evenyhc");
 
                 pnlEvnt.Visible = false;
