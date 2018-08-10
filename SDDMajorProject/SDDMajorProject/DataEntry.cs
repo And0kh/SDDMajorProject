@@ -43,8 +43,10 @@ namespace SDDMajorProject
                 slctedOptn = cmboBxEvnt.SelectedItem.ToString();
 
                 //Load the file for the selected event by using the FileHandler class
-                string events = FileHandler.Read(slctedOptn);
-                ChangeEvents("evenyhc");
+                FileHandler.Read(slctedOptn);
+                foreach (string evnt in FileHandler.FlText){//Fix this for "other" type 
+                    ChangeEvents(evnt);
+                }
 
                 pnlEvnt.Visible = false;
                 pnlDtls.Visible = true;
@@ -56,13 +58,13 @@ namespace SDDMajorProject
         }
 
         public void ChangeEvents(string events){
-            //cmboBxEvnts.Items.Add(events);
-            System.Object[] ItemObject = new System.Object[10];
+            cmboBxEvnts.Items.Add(events);
+            /*System.Object[] ItemObject = new System.Object[10];
             for (int i = 0; i <= 9; i++)
             {
                 ItemObject[i] = "Item" + i;
             }
-            cmboBxEvnts.Items.AddRange(ItemObject);
+            cmboBxEvnts.Items.AddRange(ItemObject);*/
         }
     }
 }

@@ -8,13 +8,15 @@ using System.Threading.Tasks;
 
 namespace SDDMajorProject
 {
-    class FileHandler
+    public class FileHandler
     {
+        public static string[] FlText;
+
         public static void FilePresent(){
             string ExePath;
         }
 
-        public string Read(string Event){
+        public static void Read(string Event){
             //gets the path with the name of the executable in it
             //string path = System.Reflection.Assembly.GetEntryAssembly().Location;
 
@@ -23,7 +25,7 @@ namespace SDDMajorProject
             string EvntsPth = Path.Combine(ExePath, "Events");//Creating a new directory https://msdn.microsoft.com/en-us/library/system.io.path.combine.aspx
             Console.WriteLine("Current directory:" + ExePath);
             string FlPth = "";
-            string FlText = "";
+            //string FlText = "";
 
             //Check if the "Events" folder is in the same location as the executable
             if (Directory.Exists(EvntsPth)){
@@ -31,15 +33,12 @@ namespace SDDMajorProject
                 Console.WriteLine("Loading event details from "+ EvntsPth);
                 FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
                 if (File.Exists(FlPth)){
-                    FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
+                    FileHandler.FlText = File.ReadLines(FlPth).ToArray();//Reads in the events from the relevent file
                     Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-                    //ChangeEvents(FlText);
-                    return FlText;
                 }
                 else
                 {
                     MessageBox.Show("Could not load events file.");
-                    return null;
                 }
             }
             else{
@@ -56,21 +55,17 @@ namespace SDDMajorProject
                     FlPth = Path.Combine(EvntsPth, (Event + @".txt"));//Creates a string with the relevent txt file's directory path
 
                     if (File.Exists(FlPth)){
-                        FlText = System.IO.File.ReadAllText(FlPth);//Reads in the events from the relevent file
+                        FlText = File.ReadLines(FlPth).ToArray();//Reads in the events from the relevent file
                         Console.WriteLine(FlText + "\nLoaded contents");//For testing purposes
-                        //ChangeEvents(FlText);
-                        return FlText;
                     }
                     else
                     {
                         Console.WriteLine("Relevent .txt file not prsent.");
-                        return null;
                     }
 
                 }
                 else{
                     MessageBox.Show("Could not load events file.");
-                    return null;
                 }
             }
 
