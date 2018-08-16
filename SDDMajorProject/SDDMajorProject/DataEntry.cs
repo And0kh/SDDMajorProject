@@ -45,26 +45,40 @@ namespace SDDMajorProject
                 //Load the file for the selected event by using the FileHandler class
                 FileHandler.Read(slctedOptn);
                 foreach (string evnt in FileHandler.FlText){//Fix this for "other" type 
-                    ChangeEvents(evnt);
+                    ChangeEvents(evnt, slctedOptn);
                 }
 
-                pnlEvnt.Visible = false;
-                pnlDtls.Visible = true;
-                pnlDtls.Location = new Point(12, 12);
+                switch (slctedOptn){//Makes the appropriate events details panel visible
+                    case "Swimming carnival":
+                        pnlEvnt.Visible = false;
+                        pnlSwmng.Visible = true;
+                        pnlSwmng.Location = new Point(12, 12);
+                        break;
+                    case "Athletics carnival":
+                        pnlEvnt.Visible = false;
+                        pnlAthltcs.Visible = true;
+                        pnlAthltcs.Location = new Point(12, 12);
+                        break;
+                    case "Cross country":
+                        break;
+                }
             }
             else{
                 MessageBox.Show("Please select an event");
             }
         }
 
-        public void ChangeEvents(string events){
-            cmboBxEvnts.Items.Add(events);
-            /*System.Object[] ItemObject = new System.Object[10];
-            for (int i = 0; i <= 9; i++)
-            {
-                ItemObject[i] = "Item" + i;
+        public void ChangeEvents(string events, string slctedOptn){
+            switch (slctedOptn){
+                case "Swimming carnival":
+                    cmboBxSwmEvnts.Items.Add(events);
+                    break;
+                case "Athletics carnival":
+                    cmboBxAthltcsEvnts.Items.Add(events);
+                    break;
+                case "Cross country":
+                    break;
             }
-            cmboBxEvnts.Items.AddRange(ItemObject);*/
         }
     }
 }

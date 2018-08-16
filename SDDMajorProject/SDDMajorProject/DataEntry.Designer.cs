@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlDtls = new System.Windows.Forms.Panel();
+            this.pnlAthltcs = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmboBxEvnts = new System.Windows.Forms.ComboBox();
+            this.cmboBxAthltcsEvnts = new System.Windows.Forms.ComboBox();
             this.lblEvnt = new System.Windows.Forms.Label();
             this.cmboBxAge = new System.Windows.Forms.ComboBox();
             this.lblSdntAge = new System.Windows.Forms.Label();
@@ -44,28 +44,40 @@
             this.txtBxOthr = new System.Windows.Forms.TextBox();
             this.cmboBxEvnt = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pnlDtls.SuspendLayout();
+            this.pnlSwmng = new System.Windows.Forms.Panel();
+            this.cmboBxSwmEvnts = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmboBxSwmDstnc = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pnlAthltcs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.pnlEvnt.SuspendLayout();
+            this.pnlSwmng.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlDtls
+            // pnlAthltcs
             // 
-            this.pnlDtls.Controls.Add(this.textBox1);
-            this.pnlDtls.Controls.Add(this.label2);
-            this.pnlDtls.Controls.Add(this.numericUpDown1);
-            this.pnlDtls.Controls.Add(this.label1);
-            this.pnlDtls.Controls.Add(this.cmboBxEvnts);
-            this.pnlDtls.Controls.Add(this.lblEvnt);
-            this.pnlDtls.Controls.Add(this.cmboBxAge);
-            this.pnlDtls.Controls.Add(this.lblSdntAge);
-            this.pnlDtls.Controls.Add(this.txtBxSdntName);
-            this.pnlDtls.Controls.Add(this.lblSdntName);
-            this.pnlDtls.Location = new System.Drawing.Point(218, 12);
-            this.pnlDtls.Name = "pnlDtls";
-            this.pnlDtls.Size = new System.Drawing.Size(287, 194);
-            this.pnlDtls.TabIndex = 10;
-            this.pnlDtls.Visible = false;
+            this.pnlAthltcs.Controls.Add(this.textBox1);
+            this.pnlAthltcs.Controls.Add(this.label2);
+            this.pnlAthltcs.Controls.Add(this.numericUpDown1);
+            this.pnlAthltcs.Controls.Add(this.label1);
+            this.pnlAthltcs.Controls.Add(this.cmboBxAthltcsEvnts);
+            this.pnlAthltcs.Controls.Add(this.lblEvnt);
+            this.pnlAthltcs.Controls.Add(this.cmboBxAge);
+            this.pnlAthltcs.Controls.Add(this.lblSdntAge);
+            this.pnlAthltcs.Controls.Add(this.txtBxSdntName);
+            this.pnlAthltcs.Controls.Add(this.lblSdntName);
+            this.pnlAthltcs.Location = new System.Drawing.Point(218, 12);
+            this.pnlAthltcs.Name = "pnlAthltcs";
+            this.pnlAthltcs.Size = new System.Drawing.Size(287, 194);
+            this.pnlAthltcs.TabIndex = 10;
+            this.pnlAthltcs.Visible = false;
             // 
             // textBox1
             // 
@@ -118,14 +130,14 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Attempt";
             // 
-            // cmboBxEvnts
+            // cmboBxAthltcsEvnts
             // 
-            this.cmboBxEvnts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmboBxEvnts.FormattingEnabled = true;
-            this.cmboBxEvnts.Location = new System.Drawing.Point(3, 31);
-            this.cmboBxEvnts.Name = "cmboBxEvnts";
-            this.cmboBxEvnts.Size = new System.Drawing.Size(120, 28);
-            this.cmboBxEvnts.TabIndex = 15;
+            this.cmboBxAthltcsEvnts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxAthltcsEvnts.FormattingEnabled = true;
+            this.cmboBxAthltcsEvnts.Location = new System.Drawing.Point(3, 31);
+            this.cmboBxAthltcsEvnts.Name = "cmboBxAthltcsEvnts";
+            this.cmboBxAthltcsEvnts.Size = new System.Drawing.Size(120, 28);
+            this.cmboBxAthltcsEvnts.TabIndex = 15;
             // 
             // lblEvnt
             // 
@@ -226,8 +238,7 @@
             this.cmboBxEvnt.Items.AddRange(new object[] {
             "Swimming carnival",
             "Athletics carnival",
-            "Cross country",
-            "Other (enter below)"});
+            "Cross country"});
             this.cmboBxEvnt.Location = new System.Drawing.Point(25, 50);
             this.cmboBxEvnt.Name = "cmboBxEvnt";
             this.cmboBxEvnt.Size = new System.Drawing.Size(155, 28);
@@ -244,28 +255,164 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Event day";
             // 
+            // pnlSwmng
+            // 
+            this.pnlSwmng.Controls.Add(this.textBox2);
+            this.pnlSwmng.Controls.Add(this.label6);
+            this.pnlSwmng.Controls.Add(this.comboBox1);
+            this.pnlSwmng.Controls.Add(this.label7);
+            this.pnlSwmng.Controls.Add(this.textBox3);
+            this.pnlSwmng.Controls.Add(this.label8);
+            this.pnlSwmng.Controls.Add(this.cmboBxSwmDstnc);
+            this.pnlSwmng.Controls.Add(this.label5);
+            this.pnlSwmng.Controls.Add(this.cmboBxSwmEvnts);
+            this.pnlSwmng.Controls.Add(this.label4);
+            this.pnlSwmng.Location = new System.Drawing.Point(218, 212);
+            this.pnlSwmng.Name = "pnlSwmng";
+            this.pnlSwmng.Size = new System.Drawing.Size(287, 194);
+            this.pnlSwmng.TabIndex = 12;
+            this.pnlSwmng.Visible = false;
+            // 
+            // cmboBxSwmEvnts
+            // 
+            this.cmboBxSwmEvnts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxSwmEvnts.FormattingEnabled = true;
+            this.cmboBxSwmEvnts.Location = new System.Drawing.Point(3, 31);
+            this.cmboBxSwmEvnts.Name = "cmboBxSwmEvnts";
+            this.cmboBxSwmEvnts.Size = new System.Drawing.Size(120, 28);
+            this.cmboBxSwmEvnts.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(31, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 25);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Event";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(141, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 25);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Distance";
+            // 
+            // cmboBxSwmDstnc
+            // 
+            this.cmboBxSwmDstnc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxSwmDstnc.FormattingEnabled = true;
+            this.cmboBxSwmDstnc.Items.AddRange(new object[] {
+            "50",
+            "100",
+            "200",
+            "400",
+            "800",
+            "1500"});
+            this.cmboBxSwmDstnc.Location = new System.Drawing.Point(129, 31);
+            this.cmboBxSwmDstnc.Name = "cmboBxSwmDstnc";
+            this.cmboBxSwmDstnc.Size = new System.Drawing.Size(120, 28);
+            this.cmboBxSwmDstnc.TabIndex = 19;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(8, 148);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 26);
+            this.textBox2.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 119);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 25);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Time";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "5-",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18+"});
+            this.comboBox1.Location = new System.Drawing.Point(196, 88);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(55, 28);
+            this.comboBox1.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(173, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 25);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Age group";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(3, 90);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(164, 26);
+            this.textBox3.TabIndex = 21;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(-2, 62);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(169, 25);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Name of student";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnlSwmng);
             this.Controls.Add(this.pnlEvnt);
-            this.Controls.Add(this.pnlDtls);
+            this.Controls.Add(this.pnlAthltcs);
             this.Name = "MainForm";
             this.Text = "Time sorter";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.pnlDtls.ResumeLayout(false);
-            this.pnlDtls.PerformLayout();
+            this.pnlAthltcs.ResumeLayout(false);
+            this.pnlAthltcs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.pnlEvnt.ResumeLayout(false);
             this.pnlEvnt.PerformLayout();
+            this.pnlSwmng.ResumeLayout(false);
+            this.pnlSwmng.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlDtls;
+        private System.Windows.Forms.Panel pnlAthltcs;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -280,7 +427,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBxOthr;
         private System.Windows.Forms.Button btnCnfm;
-        public System.Windows.Forms.ComboBox cmboBxEvnts;
+        public System.Windows.Forms.ComboBox cmboBxAthltcsEvnts;
+        private System.Windows.Forms.Panel pnlSwmng;
+        public System.Windows.Forms.ComboBox cmboBxSwmDstnc;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.ComboBox cmboBxSwmEvnts;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label8;
     }
 }
 

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDDMajorProject.exe" size="16304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDDMajorProject.exe" size="18864">
       <assemblyIdentity name="SDDMajorProject" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eIv8I0z7Uin/cEgmByy5IEJC6b5LRYlWdmi86d+Be2g=</dsig:DigestValue>
+        <dsig:DigestValue>IzzGkm0pdm9RUWv8pbxLfrHTWkfErlTZZgJ9VvGJ3c0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
