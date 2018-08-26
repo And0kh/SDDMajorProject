@@ -39,3 +39,4 @@ C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorPro
 C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.exe
 C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.pdb
 W:\Visual Studio 2017\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.g.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Debug\SDDMajorProject.g.resources

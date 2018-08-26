@@ -20,6 +20,7 @@ namespace SDDMajorProject
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+            pnlEvnt.Location = new Point(this.Width / 2 - pnlEvnt.Width/2, this.Height / 2 - pnlEvnt.Height/2);
         }
 
         //If "Other" is selected, make the text visible, otherwise make is invisible
@@ -31,6 +32,30 @@ namespace SDDMajorProject
             }
             else{
                 txtBxOthr.Visible = false;
+            }
+        }
+
+        private void TimeOrDistance(object sender, EventArgs e){
+            string slctdOptn = (cmboBxAthltcsEvnts.SelectedItem).ToString();
+            switch (slctdOptn){
+                case "Running 100m":
+                case "Running 200m":
+                case "Running 400m":
+                case "Running 800m":
+                case "Running 1500m":
+                    lblTm.Text = "Time";
+                    nmrcUpDnAtmpt.Enabled = false;
+                    break;
+                case "High jump":
+                case "Long jump":
+                case "Shot put":
+                case "Javelin":
+                case "Discus":
+                    lblTm.Text = "Distance";
+                    nmrcUpDnAtmpt.Enabled = true;
+                    break;
+                default:
+                    break;
             }
         }
 
@@ -48,18 +73,25 @@ namespace SDDMajorProject
                     ChangeEvents(evnt, slctedOptn);
                 }
 
+                this.MinimumSize = new Size(320, 250);//Help from https://stackoverflow.com/a/5314065
+
                 switch (slctedOptn){//Makes the appropriate events details panel visible
                     case "Swimming carnival":
                         pnlEvnt.Visible = false;
                         pnlSwmng.Visible = true;
-                        pnlSwmng.Location = new Point(12, 12);
+                        pnlSwmng.Location = new Point(this.Width / 2 - pnlSwmng.Width/2, this.Height / 2 - pnlSwmng.Height/2 - 20);
                         break;
                     case "Athletics carnival":
                         pnlEvnt.Visible = false;
                         pnlAthltcs.Visible = true;
-                        pnlAthltcs.Location = new Point(12, 12);
+                        pnlAthltcs.Location = new Point(this.Width / 2 - pnlAthltcs.Width / 2, this.Height / 2 - pnlAthltcs.Height / 2 - 20);
                         break;
                     case "Cross country":
+                        pnlEvnt.Visible = false;
+                        pnlCrsCntry.Visible = true;
+                        pnlCrsCntry.Location = new Point(this.Width / 2 - pnlAthltcs.Width / 2, this.Height / 2 - pnlAthltcs.Height / 2 - 20);
+                        break;
+                    default:
                         break;
                 }
             }
@@ -77,6 +109,8 @@ namespace SDDMajorProject
                     cmboBxAthltcsEvnts.Items.Add(events);
                     break;
                 case "Cross country":
+                    break;
+                default:
                     break;
             }
         }
