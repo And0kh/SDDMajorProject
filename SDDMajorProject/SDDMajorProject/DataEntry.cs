@@ -44,7 +44,17 @@ namespace SDDMajorProject
                 case "Running 800m":
                 case "Running 1500m":
                     lblTm.Text = "Time";
+                    nmrcUpDnAtmpt.Visible = false;
+                    lblTm.Visible = true;
+                    lblMinutes.Visible = true;
+                    lblScndsMilli.Visible = true;
+                    athltcsTmMUpDn.Visible = true;
+                    athltcsTmScMilliUpDn.Visible = true;
+
                     nmrcUpDnAtmpt.Enabled = false;
+                    lblDstnc.Visible = false;
+                    athltcsDistanceUpDn.Visible = false;
+                    lblAtmpt.Visible = false;
                     break;
                 case "High jump":
                 case "Long jump":
@@ -53,6 +63,16 @@ namespace SDDMajorProject
                 case "Discus":
                     lblTm.Text = "Distance";
                     nmrcUpDnAtmpt.Enabled = true;
+                    lblDstnc.Visible = true;
+                    athltcsDistanceUpDn.Visible = true;
+                    lblAtmpt.Visible = true;
+
+                    nmrcUpDnAtmpt.Visible = true;
+                    lblTm.Visible = false;
+                    lblMinutes.Visible = false;
+                    lblScndsMilli.Visible = false;
+                    athltcsTmMUpDn.Visible = false;
+                    athltcsTmScMilliUpDn.Visible = false;
                     break;
                 default:
                     break;
