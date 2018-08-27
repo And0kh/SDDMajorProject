@@ -1,0 +1,14 @@
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Release\SDDMajorProject.exe.config
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Release\SDDMajorProject.exe.manifest
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Release\SDDMajorProject.application
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Release\SDDMajorProject.exe
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\bin\Release\SDDMajorProject.pdb
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.g.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.MainForm.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.MainWindow.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.Properties.Resources.resources
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.csproj.GenerateResource.Cache
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.exe.manifest
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.application
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.exe
+C:\Users\andrei\Documents\School\SDD\SDDMajorProject\SDDMajorProject\SDDMajorProject\obj\Release\SDDMajorProject.pdb

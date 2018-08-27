@@ -43,7 +43,6 @@ namespace SDDMajorProject
                 case "Running 400m":
                 case "Running 800m":
                 case "Running 1500m":
-                    lblTm.Text = "Time";
                     nmrcUpDnAtmpt.Visible = false;
                     lblTm.Visible = true;
                     lblMinutes.Visible = true;
@@ -61,7 +60,6 @@ namespace SDDMajorProject
                 case "Shot put":
                 case "Javelin":
                 case "Discus":
-                    lblTm.Text = "Distance";
                     nmrcUpDnAtmpt.Enabled = true;
                     lblDstnc.Visible = true;
                     athltcsDistanceUpDn.Visible = true;
@@ -117,6 +115,22 @@ namespace SDDMajorProject
             }
             else{
                 MessageBox.Show("Please select an event");
+            }
+        }
+
+        private void DataEnter(object sender, EventArgs e){
+            var b = sender as Button;//Help from https://stackoverflow.com/a/25893605
+            switch (b.Name){
+                case "btnSwmEntr":
+                    break;
+                case "btnCrsCntryEntr":
+                    break;
+                case "btnAthltcsEntr":
+                    listView1.Items.Add("AndreI");
+                    //txtBxAthltsSdntName.Text;
+                    break;
+                default:
+                    break;
             }
         }
 

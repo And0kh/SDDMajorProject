@@ -77,6 +77,9 @@
             this.clmHdr1StdntNm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmHdr2Tm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmlHdr3Dstnc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnAthltcsEntr = new System.Windows.Forms.Button();
+            this.btnSwmEntr = new System.Windows.Forms.Button();
+            this.btnCrsCntryEntr = new System.Windows.Forms.Button();
             this.pnlAthltcs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmScMilliUpDn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmMUpDn)).BeginInit();
@@ -94,6 +97,7 @@
             // pnlAthltcs
             // 
             this.pnlAthltcs.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlAthltcs.Controls.Add(this.btnAthltcsEntr);
             this.pnlAthltcs.Controls.Add(this.lblScndsMilli);
             this.pnlAthltcs.Controls.Add(this.lblMinutes);
             this.pnlAthltcs.Controls.Add(this.athltcsTmScMilliUpDn);
@@ -111,7 +115,7 @@
             this.pnlAthltcs.Controls.Add(this.lblEvnt);
             this.pnlAthltcs.Location = new System.Drawing.Point(218, 12);
             this.pnlAthltcs.Name = "pnlAthltcs";
-            this.pnlAthltcs.Size = new System.Drawing.Size(280, 194);
+            this.pnlAthltcs.Size = new System.Drawing.Size(280, 220);
             this.pnlAthltcs.TabIndex = 10;
             this.pnlAthltcs.Visible = false;
             // 
@@ -237,7 +241,7 @@
             // 
             this.lblSdntNm.AutoSize = true;
             this.lblSdntNm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSdntNm.Location = new System.Drawing.Point(3, 5);
+            this.lblSdntNm.Location = new System.Drawing.Point(2, 5);
             this.lblSdntNm.Name = "lblSdntNm";
             this.lblSdntNm.Size = new System.Drawing.Size(169, 25);
             this.lblSdntNm.TabIndex = 10;
@@ -246,9 +250,9 @@
             // txtBxAthltsSdntName
             // 
             this.txtBxAthltsSdntName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxAthltsSdntName.Location = new System.Drawing.Point(8, 35);
+            this.txtBxAthltsSdntName.Location = new System.Drawing.Point(2, 35);
             this.txtBxAthltsSdntName.Name = "txtBxAthltsSdntName";
-            this.txtBxAthltsSdntName.Size = new System.Drawing.Size(164, 26);
+            this.txtBxAthltsSdntName.Size = new System.Drawing.Size(169, 26);
             this.txtBxAthltsSdntName.TabIndex = 11;
             // 
             // lblAtmpt
@@ -374,6 +378,7 @@
             // pnlSwmng
             // 
             this.pnlSwmng.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlSwmng.Controls.Add(this.btnSwmEntr);
             this.pnlSwmng.Controls.Add(this.lblSwmScnd);
             this.pnlSwmng.Controls.Add(this.lblSwmMin);
             this.pnlSwmng.Controls.Add(this.swmTmScMilliUpDn);
@@ -387,9 +392,9 @@
             this.pnlSwmng.Controls.Add(this.label5);
             this.pnlSwmng.Controls.Add(this.cmboBxSwmEvnts);
             this.pnlSwmng.Controls.Add(this.label4);
-            this.pnlSwmng.Location = new System.Drawing.Point(12, 212);
+            this.pnlSwmng.Location = new System.Drawing.Point(12, 232);
             this.pnlSwmng.Name = "pnlSwmng";
-            this.pnlSwmng.Size = new System.Drawing.Size(280, 194);
+            this.pnlSwmng.Size = new System.Drawing.Size(280, 220);
             this.pnlSwmng.TabIndex = 12;
             this.pnlSwmng.Visible = false;
             // 
@@ -492,16 +497,16 @@
             // txtBxSwmSdntName
             // 
             this.txtBxSwmSdntName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxSwmSdntName.Location = new System.Drawing.Point(3, 35);
+            this.txtBxSwmSdntName.Location = new System.Drawing.Point(2, 35);
             this.txtBxSwmSdntName.Name = "txtBxSwmSdntName";
-            this.txtBxSwmSdntName.Size = new System.Drawing.Size(164, 26);
+            this.txtBxSwmSdntName.Size = new System.Drawing.Size(169, 26);
             this.txtBxSwmSdntName.TabIndex = 21;
             // 
             // lblSwmSdntNm
             // 
             this.lblSwmSdntNm.AutoSize = true;
             this.lblSwmSdntNm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSwmSdntNm.Location = new System.Drawing.Point(-2, 5);
+            this.lblSwmSdntNm.Location = new System.Drawing.Point(2, 5);
             this.lblSwmSdntNm.Name = "lblSwmSdntNm";
             this.lblSwmSdntNm.Size = new System.Drawing.Size(169, 25);
             this.lblSwmSdntNm.TabIndex = 20;
@@ -555,6 +560,7 @@
             // pnlCrsCntry
             // 
             this.pnlCrsCntry.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlCrsCntry.Controls.Add(this.btnCrsCntryEntr);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntryScnd);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntryMin);
             this.pnlCrsCntry.Controls.Add(this.crsCntryTmScMilliUpDn);
@@ -564,9 +570,9 @@
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntrySdntAge);
             this.pnlCrsCntry.Controls.Add(this.txtBxCrsCntrySdntName);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntrySdntNm);
-            this.pnlCrsCntry.Location = new System.Drawing.Point(298, 212);
+            this.pnlCrsCntry.Location = new System.Drawing.Point(298, 232);
             this.pnlCrsCntry.Name = "pnlCrsCntry";
-            this.pnlCrsCntry.Size = new System.Drawing.Size(280, 194);
+            this.pnlCrsCntry.Size = new System.Drawing.Size(280, 220);
             this.pnlCrsCntry.TabIndex = 13;
             this.pnlCrsCntry.Visible = false;
             // 
@@ -669,16 +675,16 @@
             // txtBxCrsCntrySdntName
             // 
             this.txtBxCrsCntrySdntName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxCrsCntrySdntName.Location = new System.Drawing.Point(3, 35);
+            this.txtBxCrsCntrySdntName.Location = new System.Drawing.Point(2, 35);
             this.txtBxCrsCntrySdntName.Name = "txtBxCrsCntrySdntName";
-            this.txtBxCrsCntrySdntName.Size = new System.Drawing.Size(164, 26);
+            this.txtBxCrsCntrySdntName.Size = new System.Drawing.Size(169, 26);
             this.txtBxCrsCntrySdntName.TabIndex = 27;
             // 
             // lblCrsCntrySdntNm
             // 
             this.lblCrsCntrySdntNm.AutoSize = true;
             this.lblCrsCntrySdntNm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrsCntrySdntNm.Location = new System.Drawing.Point(-2, 5);
+            this.lblCrsCntrySdntNm.Location = new System.Drawing.Point(2, 5);
             this.lblCrsCntrySdntNm.Name = "lblCrsCntrySdntNm";
             this.lblCrsCntrySdntNm.Size = new System.Drawing.Size(169, 25);
             this.lblCrsCntrySdntNm.TabIndex = 26;
@@ -696,6 +702,52 @@
             this.listView1.Size = new System.Drawing.Size(253, 97);
             this.listView1.TabIndex = 14;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // clmHdr1StdntNm
+            // 
+            this.clmHdr1StdntNm.Text = "Student name";
+            this.clmHdr1StdntNm.Width = 100;
+            // 
+            // clmHdr2Tm
+            // 
+            this.clmHdr2Tm.Text = "Time";
+            this.clmHdr2Tm.Width = 50;
+            // 
+            // cmlHdr3Dstnc
+            // 
+            this.cmlHdr3Dstnc.Text = "Distance";
+            this.cmlHdr3Dstnc.Width = 65;
+            // 
+            // btnAthltcsEntr
+            // 
+            this.btnAthltcsEntr.Location = new System.Drawing.Point(105, 190);
+            this.btnAthltcsEntr.Name = "btnAthltcsEntr";
+            this.btnAthltcsEntr.Size = new System.Drawing.Size(70, 23);
+            this.btnAthltcsEntr.TabIndex = 26;
+            this.btnAthltcsEntr.Text = "Enter data";
+            this.btnAthltcsEntr.UseVisualStyleBackColor = true;
+            this.btnAthltcsEntr.Click += new System.EventHandler(this.DataEnter);
+            // 
+            // btnSwmEntr
+            // 
+            this.btnSwmEntr.Location = new System.Drawing.Point(105, 190);
+            this.btnSwmEntr.Name = "btnSwmEntr";
+            this.btnSwmEntr.Size = new System.Drawing.Size(70, 23);
+            this.btnSwmEntr.TabIndex = 30;
+            this.btnSwmEntr.Text = "Enter data";
+            this.btnSwmEntr.UseVisualStyleBackColor = true;
+            this.btnSwmEntr.Click += new System.EventHandler(this.DataEnter);
+            // 
+            // btnCrsCntryEntr
+            // 
+            this.btnCrsCntryEntr.Location = new System.Drawing.Point(105, 190);
+            this.btnCrsCntryEntr.Name = "btnCrsCntryEntr";
+            this.btnCrsCntryEntr.Size = new System.Drawing.Size(70, 23);
+            this.btnCrsCntryEntr.TabIndex = 35;
+            this.btnCrsCntryEntr.Text = "Enter data";
+            this.btnCrsCntryEntr.UseVisualStyleBackColor = true;
+            this.btnCrsCntryEntr.Click += new System.EventHandler(this.DataEnter);
             // 
             // MainForm
             // 
@@ -782,6 +834,9 @@
         private System.Windows.Forms.ColumnHeader clmHdr1StdntNm;
         private System.Windows.Forms.ColumnHeader clmHdr2Tm;
         private System.Windows.Forms.ColumnHeader cmlHdr3Dstnc;
+        private System.Windows.Forms.Button btnAthltcsEntr;
+        private System.Windows.Forms.Button btnSwmEntr;
+        private System.Windows.Forms.Button btnCrsCntryEntr;
     }
 }
 
