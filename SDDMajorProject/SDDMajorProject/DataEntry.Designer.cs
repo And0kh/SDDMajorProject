@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlAthltcs = new System.Windows.Forms.Panel();
+            this.btnAthltcsEntr = new System.Windows.Forms.Button();
             this.lblScndsMilli = new System.Windows.Forms.Label();
             this.lblMinutes = new System.Windows.Forms.Label();
             this.athltcsTmScMilliUpDn = new System.Windows.Forms.NumericUpDown();
@@ -42,7 +43,7 @@
             this.lblAtmpt = new System.Windows.Forms.Label();
             this.lblAthltsSdntAge = new System.Windows.Forms.Label();
             this.cmboBxAthltcsEvnts = new System.Windows.Forms.ComboBox();
-            this.cmboBxAge = new System.Windows.Forms.ComboBox();
+            this.cmboBxAthltsBxAge = new System.Windows.Forms.ComboBox();
             this.lblEvnt = new System.Windows.Forms.Label();
             this.pnlEvnt = new System.Windows.Forms.Panel();
             this.btnCnfm = new System.Windows.Forms.Button();
@@ -50,12 +51,13 @@
             this.cmboBxEvnt = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlSwmng = new System.Windows.Forms.Panel();
+            this.btnSwmEntr = new System.Windows.Forms.Button();
             this.lblSwmScnd = new System.Windows.Forms.Label();
             this.lblSwmMin = new System.Windows.Forms.Label();
             this.swmTmScMilliUpDn = new System.Windows.Forms.NumericUpDown();
             this.swmTmMinUpDn = new System.Windows.Forms.NumericUpDown();
             this.lblSwmTm = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmboBxSwmBxAge = new System.Windows.Forms.ComboBox();
             this.lblSwmSdntAge = new System.Windows.Forms.Label();
             this.txtBxSwmSdntName = new System.Windows.Forms.TextBox();
             this.lblSwmSdntNm = new System.Windows.Forms.Label();
@@ -64,22 +66,21 @@
             this.cmboBxSwmEvnts = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlCrsCntry = new System.Windows.Forms.Panel();
+            this.btnCrsCntryEntr = new System.Windows.Forms.Button();
             this.lblCrsCntryScnd = new System.Windows.Forms.Label();
             this.lblCrsCntryMin = new System.Windows.Forms.Label();
             this.crsCntryTmScMilliUpDn = new System.Windows.Forms.NumericUpDown();
             this.crsCntryTmMinUpDn = new System.Windows.Forms.NumericUpDown();
             this.lblCrsCntryTm = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmboBxCrsCntryBxAge = new System.Windows.Forms.ComboBox();
             this.lblCrsCntrySdntAge = new System.Windows.Forms.Label();
             this.txtBxCrsCntrySdntName = new System.Windows.Forms.TextBox();
             this.lblCrsCntrySdntNm = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.clmHdr1StdntNm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmHdr2Tm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cmlHdr3Dstnc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnAthltcsEntr = new System.Windows.Forms.Button();
-            this.btnSwmEntr = new System.Windows.Forms.Button();
-            this.btnCrsCntryEntr = new System.Windows.Forms.Button();
+            this.clmHdr3Rslt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmHdr2Evnt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmHdr2Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlAthltcs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmScMilliUpDn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmMUpDn)).BeginInit();
@@ -111,13 +112,23 @@
             this.pnlAthltcs.Controls.Add(this.lblAtmpt);
             this.pnlAthltcs.Controls.Add(this.lblAthltsSdntAge);
             this.pnlAthltcs.Controls.Add(this.cmboBxAthltcsEvnts);
-            this.pnlAthltcs.Controls.Add(this.cmboBxAge);
+            this.pnlAthltcs.Controls.Add(this.cmboBxAthltsBxAge);
             this.pnlAthltcs.Controls.Add(this.lblEvnt);
             this.pnlAthltcs.Location = new System.Drawing.Point(218, 12);
             this.pnlAthltcs.Name = "pnlAthltcs";
             this.pnlAthltcs.Size = new System.Drawing.Size(280, 220);
             this.pnlAthltcs.TabIndex = 10;
             this.pnlAthltcs.Visible = false;
+            // 
+            // btnAthltcsEntr
+            // 
+            this.btnAthltcsEntr.Location = new System.Drawing.Point(105, 190);
+            this.btnAthltcsEntr.Name = "btnAthltcsEntr";
+            this.btnAthltcsEntr.Size = new System.Drawing.Size(70, 23);
+            this.btnAthltcsEntr.TabIndex = 26;
+            this.btnAthltcsEntr.Text = "Enter data";
+            this.btnAthltcsEntr.UseVisualStyleBackColor = true;
+            this.btnAthltcsEntr.Click += new System.EventHandler(this.DataEnter);
             // 
             // lblScndsMilli
             // 
@@ -286,11 +297,11 @@
             this.cmboBxAthltcsEvnts.TabIndex = 15;
             this.cmboBxAthltcsEvnts.SelectedIndexChanged += new System.EventHandler(this.TimeOrDistance);
             // 
-            // cmboBxAge
+            // cmboBxAthltsBxAge
             // 
-            this.cmboBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmboBxAge.FormattingEnabled = true;
-            this.cmboBxAge.Items.AddRange(new object[] {
+            this.cmboBxAthltsBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxAthltsBxAge.FormattingEnabled = true;
+            this.cmboBxAthltsBxAge.Items.AddRange(new object[] {
             "5-",
             "6",
             "7",
@@ -305,10 +316,10 @@
             "16",
             "17",
             "18+"});
-            this.cmboBxAge.Location = new System.Drawing.Point(196, 34);
-            this.cmboBxAge.Name = "cmboBxAge";
-            this.cmboBxAge.Size = new System.Drawing.Size(55, 28);
-            this.cmboBxAge.TabIndex = 13;
+            this.cmboBxAthltsBxAge.Location = new System.Drawing.Point(196, 34);
+            this.cmboBxAthltsBxAge.Name = "cmboBxAthltsBxAge";
+            this.cmboBxAthltsBxAge.Size = new System.Drawing.Size(55, 28);
+            this.cmboBxAthltsBxAge.TabIndex = 13;
             // 
             // lblEvnt
             // 
@@ -384,7 +395,7 @@
             this.pnlSwmng.Controls.Add(this.swmTmScMilliUpDn);
             this.pnlSwmng.Controls.Add(this.swmTmMinUpDn);
             this.pnlSwmng.Controls.Add(this.lblSwmTm);
-            this.pnlSwmng.Controls.Add(this.comboBox1);
+            this.pnlSwmng.Controls.Add(this.cmboBxSwmBxAge);
             this.pnlSwmng.Controls.Add(this.lblSwmSdntAge);
             this.pnlSwmng.Controls.Add(this.txtBxSwmSdntName);
             this.pnlSwmng.Controls.Add(this.lblSwmSdntNm);
@@ -397,6 +408,16 @@
             this.pnlSwmng.Size = new System.Drawing.Size(280, 220);
             this.pnlSwmng.TabIndex = 12;
             this.pnlSwmng.Visible = false;
+            // 
+            // btnSwmEntr
+            // 
+            this.btnSwmEntr.Location = new System.Drawing.Point(105, 190);
+            this.btnSwmEntr.Name = "btnSwmEntr";
+            this.btnSwmEntr.Size = new System.Drawing.Size(70, 23);
+            this.btnSwmEntr.TabIndex = 30;
+            this.btnSwmEntr.Text = "Enter data";
+            this.btnSwmEntr.UseVisualStyleBackColor = true;
+            this.btnSwmEntr.Click += new System.EventHandler(this.DataEnter);
             // 
             // lblSwmScnd
             // 
@@ -460,11 +481,11 @@
             this.lblSwmTm.TabIndex = 24;
             this.lblSwmTm.Text = "Time";
             // 
-            // comboBox1
+            // cmboBxSwmBxAge
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmboBxSwmBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxSwmBxAge.FormattingEnabled = true;
+            this.cmboBxSwmBxAge.Items.AddRange(new object[] {
             "5-",
             "6",
             "7",
@@ -479,10 +500,11 @@
             "16",
             "17",
             "18+"});
-            this.comboBox1.Location = new System.Drawing.Point(196, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(55, 28);
-            this.comboBox1.TabIndex = 23;
+            this.cmboBxSwmBxAge.Location = new System.Drawing.Point(196, 34);
+            this.cmboBxSwmBxAge.Name = "cmboBxSwmBxAge";
+            this.cmboBxSwmBxAge.Size = new System.Drawing.Size(55, 28);
+            this.cmboBxSwmBxAge.TabIndex = 23;
+            this.cmboBxSwmBxAge.Text = "5-";
             // 
             // lblSwmSdntAge
             // 
@@ -566,7 +588,7 @@
             this.pnlCrsCntry.Controls.Add(this.crsCntryTmScMilliUpDn);
             this.pnlCrsCntry.Controls.Add(this.crsCntryTmMinUpDn);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntryTm);
-            this.pnlCrsCntry.Controls.Add(this.comboBox2);
+            this.pnlCrsCntry.Controls.Add(this.cmboBxCrsCntryBxAge);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntrySdntAge);
             this.pnlCrsCntry.Controls.Add(this.txtBxCrsCntrySdntName);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntrySdntNm);
@@ -575,6 +597,16 @@
             this.pnlCrsCntry.Size = new System.Drawing.Size(280, 220);
             this.pnlCrsCntry.TabIndex = 13;
             this.pnlCrsCntry.Visible = false;
+            // 
+            // btnCrsCntryEntr
+            // 
+            this.btnCrsCntryEntr.Location = new System.Drawing.Point(105, 190);
+            this.btnCrsCntryEntr.Name = "btnCrsCntryEntr";
+            this.btnCrsCntryEntr.Size = new System.Drawing.Size(70, 23);
+            this.btnCrsCntryEntr.TabIndex = 35;
+            this.btnCrsCntryEntr.Text = "Enter data";
+            this.btnCrsCntryEntr.UseVisualStyleBackColor = true;
+            this.btnCrsCntryEntr.Click += new System.EventHandler(this.DataEnter);
             // 
             // lblCrsCntryScnd
             // 
@@ -638,11 +670,11 @@
             this.lblCrsCntryTm.TabIndex = 30;
             this.lblCrsCntryTm.Text = "Time";
             // 
-            // comboBox2
+            // cmboBxCrsCntryBxAge
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmboBxCrsCntryBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxCrsCntryBxAge.FormattingEnabled = true;
+            this.cmboBxCrsCntryBxAge.Items.AddRange(new object[] {
             "5-",
             "6",
             "7",
@@ -657,10 +689,10 @@
             "16",
             "17",
             "18+"});
-            this.comboBox2.Location = new System.Drawing.Point(196, 34);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(55, 28);
-            this.comboBox2.TabIndex = 29;
+            this.cmboBxCrsCntryBxAge.Location = new System.Drawing.Point(196, 34);
+            this.cmboBxCrsCntryBxAge.Name = "cmboBxCrsCntryBxAge";
+            this.cmboBxCrsCntryBxAge.Size = new System.Drawing.Size(55, 28);
+            this.cmboBxCrsCntryBxAge.TabIndex = 29;
             // 
             // lblCrsCntrySdntAge
             // 
@@ -694,8 +726,9 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmHdr1StdntNm,
-            this.clmHdr2Tm,
-            this.cmlHdr3Dstnc});
+            this.clmHdr2Age,
+            this.clmHdr2Evnt,
+            this.clmHdr3Rslt});
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(505, 13);
             this.listView1.Name = "listView1";
@@ -709,45 +742,19 @@
             this.clmHdr1StdntNm.Text = "Student name";
             this.clmHdr1StdntNm.Width = 100;
             // 
-            // clmHdr2Tm
+            // clmHdr3Rslt
             // 
-            this.clmHdr2Tm.Text = "Time";
-            this.clmHdr2Tm.Width = 50;
+            this.clmHdr3Rslt.Text = "Result";
+            this.clmHdr3Rslt.Width = 50;
             // 
-            // cmlHdr3Dstnc
+            // clmHdr2Evnt
             // 
-            this.cmlHdr3Dstnc.Text = "Distance";
-            this.cmlHdr3Dstnc.Width = 65;
+            this.clmHdr2Evnt.Text = "Event";
             // 
-            // btnAthltcsEntr
+            // clmHdr2Age
             // 
-            this.btnAthltcsEntr.Location = new System.Drawing.Point(105, 190);
-            this.btnAthltcsEntr.Name = "btnAthltcsEntr";
-            this.btnAthltcsEntr.Size = new System.Drawing.Size(70, 23);
-            this.btnAthltcsEntr.TabIndex = 26;
-            this.btnAthltcsEntr.Text = "Enter data";
-            this.btnAthltcsEntr.UseVisualStyleBackColor = true;
-            this.btnAthltcsEntr.Click += new System.EventHandler(this.DataEnter);
-            // 
-            // btnSwmEntr
-            // 
-            this.btnSwmEntr.Location = new System.Drawing.Point(105, 190);
-            this.btnSwmEntr.Name = "btnSwmEntr";
-            this.btnSwmEntr.Size = new System.Drawing.Size(70, 23);
-            this.btnSwmEntr.TabIndex = 30;
-            this.btnSwmEntr.Text = "Enter data";
-            this.btnSwmEntr.UseVisualStyleBackColor = true;
-            this.btnSwmEntr.Click += new System.EventHandler(this.DataEnter);
-            // 
-            // btnCrsCntryEntr
-            // 
-            this.btnCrsCntryEntr.Location = new System.Drawing.Point(105, 190);
-            this.btnCrsCntryEntr.Name = "btnCrsCntryEntr";
-            this.btnCrsCntryEntr.Size = new System.Drawing.Size(70, 23);
-            this.btnCrsCntryEntr.TabIndex = 35;
-            this.btnCrsCntryEntr.Text = "Enter data";
-            this.btnCrsCntryEntr.UseVisualStyleBackColor = true;
-            this.btnCrsCntryEntr.Click += new System.EventHandler(this.DataEnter);
+            this.clmHdr2Age.Text = "Age";
+            this.clmHdr2Age.Width = 40;
             // 
             // MainForm
             // 
@@ -790,7 +797,7 @@
         private System.Windows.Forms.NumericUpDown nmrcUpDnAtmpt;
         private System.Windows.Forms.Label lblAtmpt;
         private System.Windows.Forms.Label lblEvnt;
-        private System.Windows.Forms.ComboBox cmboBxAge;
+        private System.Windows.Forms.ComboBox cmboBxAthltsBxAge;
         private System.Windows.Forms.Label lblAthltsSdntAge;
         private System.Windows.Forms.TextBox txtBxAthltsSdntName;
         private System.Windows.Forms.Label lblSdntNm;
@@ -806,13 +813,13 @@
         public System.Windows.Forms.ComboBox cmboBxSwmEvnts;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblSwmTm;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmboBxSwmBxAge;
         private System.Windows.Forms.Label lblSwmSdntAge;
         private System.Windows.Forms.TextBox txtBxSwmSdntName;
         private System.Windows.Forms.Label lblSwmSdntNm;
         private System.Windows.Forms.Panel pnlCrsCntry;
         private System.Windows.Forms.Label lblCrsCntryTm;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmboBxCrsCntryBxAge;
         private System.Windows.Forms.Label lblCrsCntrySdntAge;
         private System.Windows.Forms.TextBox txtBxCrsCntrySdntName;
         private System.Windows.Forms.Label lblCrsCntrySdntNm;
@@ -832,11 +839,12 @@
         private System.Windows.Forms.NumericUpDown crsCntryTmMinUpDn;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader clmHdr1StdntNm;
-        private System.Windows.Forms.ColumnHeader clmHdr2Tm;
-        private System.Windows.Forms.ColumnHeader cmlHdr3Dstnc;
+        private System.Windows.Forms.ColumnHeader clmHdr3Rslt;
         private System.Windows.Forms.Button btnAthltcsEntr;
         private System.Windows.Forms.Button btnSwmEntr;
         private System.Windows.Forms.Button btnCrsCntryEntr;
+        private System.Windows.Forms.ColumnHeader clmHdr2Evnt;
+        private System.Windows.Forms.ColumnHeader clmHdr2Age;
     }
 }
 

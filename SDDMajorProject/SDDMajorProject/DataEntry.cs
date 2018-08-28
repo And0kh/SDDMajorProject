@@ -122,12 +122,22 @@ namespace SDDMajorProject
             var b = sender as Button;//Help from https://stackoverflow.com/a/25893605
             switch (b.Name){
                 case "btnSwmEntr":
+                    string s = cmboBxSwmEvnts.Text;
+                    if (!string.IsNullOrWhiteSpace(txtBxSwmSdntName.Text) && s != null){//Check to see if a name is entered
+                        string[] row = { txtBxSwmSdntName.Text, cmboBxSwmBxAge.Text, cmboBxSwmEvnts.Text, "null" };
+                        var listViewItem = new ListViewItem(row);
+                        listView1.Items.Add(listViewItem);
+                    }
                     break;
                 case "btnCrsCntryEntr":
+                    if (!string.IsNullOrWhiteSpace(txtBxCrsCntrySdntName.Text)){//Checks to se is a name is entered
+
+                    }
                     break;
                 case "btnAthltcsEntr":
-                    listView1.Items.Add("AndreI");
-                    //txtBxAthltsSdntName.Text;
+                    if (!string.IsNullOrWhiteSpace(txtBxAthltsSdntName.Text)){//Checks to see if a name is entered
+
+                    }
                     break;
                 default:
                     break;
