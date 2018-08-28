@@ -1,0 +1,21 @@
+﻿Freestyle 50m
+Freestyle 100m
+Freestyle 200m
+Freestyle 400m
+Freestyle 800m
+Freestyle 1500m
+Breast stroke 50m
+Back stroke 50m
+Butterfly 50m
+Individual medley 200m
+Running 100m
+Running 200m
+Running 400m
+Running 800m
+Running 1500m
+High jump
+Long jump
+Shot put
+Javelin
+Discus
+Cross country

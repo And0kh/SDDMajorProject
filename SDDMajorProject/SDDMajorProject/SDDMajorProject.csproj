@@ -120,6 +120,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Events\Events.txt" />
     <Resource Include="Events\Athletics carnival.txt" />
     <Content Include="Events\Cross country.txt" />
     <Resource Include="Events\Swimming carnival.txt" />

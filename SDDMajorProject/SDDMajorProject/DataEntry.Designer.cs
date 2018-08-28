@@ -30,20 +30,18 @@
         {
             this.pnlAthltcs = new System.Windows.Forms.Panel();
             this.btnAthltcsEntr = new System.Windows.Forms.Button();
-            this.lblScndsMilli = new System.Windows.Forms.Label();
-            this.lblMinutes = new System.Windows.Forms.Label();
+            this.lblAthltcsScndsMilli = new System.Windows.Forms.Label();
+            this.lblAthltcsMinutes = new System.Windows.Forms.Label();
             this.athltcsTmScMilliUpDn = new System.Windows.Forms.NumericUpDown();
             this.athltcsTmMUpDn = new System.Windows.Forms.NumericUpDown();
             this.lblDstnc = new System.Windows.Forms.Label();
-            this.athltcsDistanceUpDn = new System.Windows.Forms.NumericUpDown();
+            this.athltcsDistanceAtmt1UpDn = new System.Windows.Forms.NumericUpDown();
             this.lblTm = new System.Windows.Forms.Label();
-            this.nmrcUpDnAtmpt = new System.Windows.Forms.NumericUpDown();
             this.lblSdntNm = new System.Windows.Forms.Label();
-            this.txtBxAthltsSdntName = new System.Windows.Forms.TextBox();
-            this.lblAtmpt = new System.Windows.Forms.Label();
+            this.txtBxAthltcsSdntName = new System.Windows.Forms.TextBox();
             this.lblAthltsSdntAge = new System.Windows.Forms.Label();
             this.cmboBxAthltcsEvnts = new System.Windows.Forms.ComboBox();
-            this.cmboBxAthltsBxAge = new System.Windows.Forms.ComboBox();
+            this.cmboBxAthltcsBxAge = new System.Windows.Forms.ComboBox();
             this.lblEvnt = new System.Windows.Forms.Label();
             this.pnlEvnt = new System.Windows.Forms.Panel();
             this.btnCnfm = new System.Windows.Forms.Button();
@@ -76,16 +74,21 @@
             this.lblCrsCntrySdntAge = new System.Windows.Forms.Label();
             this.txtBxCrsCntrySdntName = new System.Windows.Forms.TextBox();
             this.lblCrsCntrySdntNm = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewEnteredData = new System.Windows.Forms.ListView();
             this.clmHdr1StdntNm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmHdr3Rslt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmHdr2Evnt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmHdr2Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmHdr2Evnt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmHdr3Rslt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.athltcsDistanceAtmt2UpDn = new System.Windows.Forms.NumericUpDown();
+            this.athltcsDistanceAtmt3UpDn = new System.Windows.Forms.NumericUpDown();
+            this.btnRemoveEntry = new System.Windows.Forms.Button();
+            this.btnSort = new System.Windows.Forms.Button();
+            this.cmboBxAgeSort = new System.Windows.Forms.ComboBox();
+            this.cmboBxEventSort = new System.Windows.Forms.ComboBox();
             this.pnlAthltcs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmScMilliUpDn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmMUpDn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceUpDn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDnAtmpt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceAtmt1UpDn)).BeginInit();
             this.pnlEvnt.SuspendLayout();
             this.pnlSwmng.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.swmTmScMilliUpDn)).BeginInit();
@@ -93,26 +96,28 @@
             this.pnlCrsCntry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.crsCntryTmScMilliUpDn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crsCntryTmMinUpDn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceAtmt2UpDn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceAtmt3UpDn)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAthltcs
             // 
-            this.pnlAthltcs.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlAthltcs.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pnlAthltcs.Controls.Add(this.athltcsDistanceAtmt3UpDn);
+            this.pnlAthltcs.Controls.Add(this.athltcsDistanceAtmt2UpDn);
             this.pnlAthltcs.Controls.Add(this.btnAthltcsEntr);
-            this.pnlAthltcs.Controls.Add(this.lblScndsMilli);
-            this.pnlAthltcs.Controls.Add(this.lblMinutes);
+            this.pnlAthltcs.Controls.Add(this.lblAthltcsScndsMilli);
+            this.pnlAthltcs.Controls.Add(this.lblAthltcsMinutes);
             this.pnlAthltcs.Controls.Add(this.athltcsTmScMilliUpDn);
             this.pnlAthltcs.Controls.Add(this.athltcsTmMUpDn);
             this.pnlAthltcs.Controls.Add(this.lblDstnc);
-            this.pnlAthltcs.Controls.Add(this.athltcsDistanceUpDn);
+            this.pnlAthltcs.Controls.Add(this.athltcsDistanceAtmt1UpDn);
             this.pnlAthltcs.Controls.Add(this.lblTm);
-            this.pnlAthltcs.Controls.Add(this.nmrcUpDnAtmpt);
             this.pnlAthltcs.Controls.Add(this.lblSdntNm);
-            this.pnlAthltcs.Controls.Add(this.txtBxAthltsSdntName);
-            this.pnlAthltcs.Controls.Add(this.lblAtmpt);
+            this.pnlAthltcs.Controls.Add(this.txtBxAthltcsSdntName);
             this.pnlAthltcs.Controls.Add(this.lblAthltsSdntAge);
             this.pnlAthltcs.Controls.Add(this.cmboBxAthltcsEvnts);
-            this.pnlAthltcs.Controls.Add(this.cmboBxAthltsBxAge);
+            this.pnlAthltcs.Controls.Add(this.cmboBxAthltcsBxAge);
             this.pnlAthltcs.Controls.Add(this.lblEvnt);
             this.pnlAthltcs.Location = new System.Drawing.Point(218, 12);
             this.pnlAthltcs.Name = "pnlAthltcs";
@@ -130,27 +135,27 @@
             this.btnAthltcsEntr.UseVisualStyleBackColor = true;
             this.btnAthltcsEntr.Click += new System.EventHandler(this.DataEnter);
             // 
-            // lblScndsMilli
+            // lblAthltcsScndsMilli
             // 
-            this.lblScndsMilli.AutoSize = true;
-            this.lblScndsMilli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScndsMilli.Location = new System.Drawing.Point(171, 129);
-            this.lblScndsMilli.Name = "lblScndsMilli";
-            this.lblScndsMilli.Size = new System.Drawing.Size(96, 25);
-            this.lblScndsMilli.TabIndex = 25;
-            this.lblScndsMilli.Text = "Seconds";
-            this.lblScndsMilli.Visible = false;
+            this.lblAthltcsScndsMilli.AutoSize = true;
+            this.lblAthltcsScndsMilli.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAthltcsScndsMilli.Location = new System.Drawing.Point(3, 81);
+            this.lblAthltcsScndsMilli.Name = "lblAthltcsScndsMilli";
+            this.lblAthltcsScndsMilli.Size = new System.Drawing.Size(96, 25);
+            this.lblAthltcsScndsMilli.TabIndex = 25;
+            this.lblAthltcsScndsMilli.Text = "Seconds";
+            this.lblAthltcsScndsMilli.Visible = false;
             // 
-            // lblMinutes
+            // lblAthltcsMinutes
             // 
-            this.lblMinutes.AutoSize = true;
-            this.lblMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinutes.Location = new System.Drawing.Point(79, 129);
-            this.lblMinutes.Name = "lblMinutes";
-            this.lblMinutes.Size = new System.Drawing.Size(88, 25);
-            this.lblMinutes.TabIndex = 24;
-            this.lblMinutes.Text = "Minutes";
-            this.lblMinutes.Visible = false;
+            this.lblAthltcsMinutes.AutoSize = true;
+            this.lblAthltcsMinutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAthltcsMinutes.Location = new System.Drawing.Point(9, 64);
+            this.lblAthltcsMinutes.Name = "lblAthltcsMinutes";
+            this.lblAthltcsMinutes.Size = new System.Drawing.Size(88, 25);
+            this.lblAthltcsMinutes.TabIndex = 24;
+            this.lblAthltcsMinutes.Text = "Minutes";
+            this.lblAthltcsMinutes.Visible = false;
             // 
             // athltcsTmScMilliUpDn
             // 
@@ -161,7 +166,7 @@
             0,
             0,
             196608});
-            this.athltcsTmScMilliUpDn.Location = new System.Drawing.Point(182, 156);
+            this.athltcsTmScMilliUpDn.Location = new System.Drawing.Point(196, 91);
             this.athltcsTmScMilliUpDn.Maximum = new decimal(new int[] {
             59999,
             0,
@@ -175,7 +180,7 @@
             // athltcsTmMUpDn
             // 
             this.athltcsTmMUpDn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.athltcsTmMUpDn.Location = new System.Drawing.Point(88, 156);
+            this.athltcsTmMUpDn.Location = new System.Drawing.Point(196, 64);
             this.athltcsTmMUpDn.Maximum = new decimal(new int[] {
             720,
             0,
@@ -190,63 +195,38 @@
             // 
             this.lblDstnc.AutoSize = true;
             this.lblDstnc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDstnc.Location = new System.Drawing.Point(22, 129);
+            this.lblDstnc.Location = new System.Drawing.Point(75, 129);
             this.lblDstnc.Name = "lblDstnc";
             this.lblDstnc.Size = new System.Drawing.Size(127, 25);
             this.lblDstnc.TabIndex = 21;
             this.lblDstnc.Text = "Distance(m)";
             this.lblDstnc.Visible = false;
             // 
-            // athltcsDistanceUpDn
+            // athltcsDistanceAtmt1UpDn
             // 
-            this.athltcsDistanceUpDn.DecimalPlaces = 2;
-            this.athltcsDistanceUpDn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.athltcsDistanceUpDn.Increment = new decimal(new int[] {
+            this.athltcsDistanceAtmt1UpDn.DecimalPlaces = 2;
+            this.athltcsDistanceAtmt1UpDn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.athltcsDistanceAtmt1UpDn.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.athltcsDistanceUpDn.Location = new System.Drawing.Point(46, 156);
-            this.athltcsDistanceUpDn.Name = "athltcsDistanceUpDn";
-            this.athltcsDistanceUpDn.Size = new System.Drawing.Size(80, 26);
-            this.athltcsDistanceUpDn.TabIndex = 20;
-            this.athltcsDistanceUpDn.Visible = false;
+            this.athltcsDistanceAtmt1UpDn.Location = new System.Drawing.Point(20, 157);
+            this.athltcsDistanceAtmt1UpDn.Name = "athltcsDistanceAtmt1UpDn";
+            this.athltcsDistanceAtmt1UpDn.Size = new System.Drawing.Size(70, 26);
+            this.athltcsDistanceAtmt1UpDn.TabIndex = 20;
+            this.athltcsDistanceAtmt1UpDn.Visible = false;
             // 
             // lblTm
             // 
             this.lblTm.AutoSize = true;
             this.lblTm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTm.Location = new System.Drawing.Point(13, 156);
+            this.lblTm.Location = new System.Drawing.Point(13, 106);
             this.lblTm.Name = "lblTm";
             this.lblTm.Size = new System.Drawing.Size(59, 25);
             this.lblTm.TabIndex = 18;
             this.lblTm.Text = "Time";
             this.lblTm.Visible = false;
-            // 
-            // nmrcUpDnAtmpt
-            // 
-            this.nmrcUpDnAtmpt.Enabled = false;
-            this.nmrcUpDnAtmpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmrcUpDnAtmpt.Location = new System.Drawing.Point(182, 156);
-            this.nmrcUpDnAtmpt.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nmrcUpDnAtmpt.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nmrcUpDnAtmpt.Name = "nmrcUpDnAtmpt";
-            this.nmrcUpDnAtmpt.Size = new System.Drawing.Size(55, 26);
-            this.nmrcUpDnAtmpt.TabIndex = 17;
-            this.nmrcUpDnAtmpt.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nmrcUpDnAtmpt.Visible = false;
             // 
             // lblSdntNm
             // 
@@ -258,24 +238,13 @@
             this.lblSdntNm.TabIndex = 10;
             this.lblSdntNm.Text = "Name of student";
             // 
-            // txtBxAthltsSdntName
+            // txtBxAthltcsSdntName
             // 
-            this.txtBxAthltsSdntName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxAthltsSdntName.Location = new System.Drawing.Point(2, 35);
-            this.txtBxAthltsSdntName.Name = "txtBxAthltsSdntName";
-            this.txtBxAthltsSdntName.Size = new System.Drawing.Size(169, 26);
-            this.txtBxAthltsSdntName.TabIndex = 11;
-            // 
-            // lblAtmpt
-            // 
-            this.lblAtmpt.AutoSize = true;
-            this.lblAtmpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAtmpt.Location = new System.Drawing.Point(166, 129);
-            this.lblAtmpt.Name = "lblAtmpt";
-            this.lblAtmpt.Size = new System.Drawing.Size(85, 25);
-            this.lblAtmpt.TabIndex = 16;
-            this.lblAtmpt.Text = "Attempt";
-            this.lblAtmpt.Visible = false;
+            this.txtBxAthltcsSdntName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAthltcsSdntName.Location = new System.Drawing.Point(2, 35);
+            this.txtBxAthltcsSdntName.Name = "txtBxAthltcsSdntName";
+            this.txtBxAthltcsSdntName.Size = new System.Drawing.Size(169, 26);
+            this.txtBxAthltcsSdntName.TabIndex = 11;
             // 
             // lblAthltsSdntAge
             // 
@@ -297,11 +266,11 @@
             this.cmboBxAthltcsEvnts.TabIndex = 15;
             this.cmboBxAthltcsEvnts.SelectedIndexChanged += new System.EventHandler(this.TimeOrDistance);
             // 
-            // cmboBxAthltsBxAge
+            // cmboBxAthltcsBxAge
             // 
-            this.cmboBxAthltsBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmboBxAthltsBxAge.FormattingEnabled = true;
-            this.cmboBxAthltsBxAge.Items.AddRange(new object[] {
+            this.cmboBxAthltcsBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxAthltcsBxAge.FormattingEnabled = true;
+            this.cmboBxAthltcsBxAge.Items.AddRange(new object[] {
             "5-",
             "6",
             "7",
@@ -316,10 +285,10 @@
             "16",
             "17",
             "18+"});
-            this.cmboBxAthltsBxAge.Location = new System.Drawing.Point(196, 34);
-            this.cmboBxAthltsBxAge.Name = "cmboBxAthltsBxAge";
-            this.cmboBxAthltsBxAge.Size = new System.Drawing.Size(55, 28);
-            this.cmboBxAthltsBxAge.TabIndex = 13;
+            this.cmboBxAthltcsBxAge.Location = new System.Drawing.Point(196, 34);
+            this.cmboBxAthltcsBxAge.Name = "cmboBxAthltcsBxAge";
+            this.cmboBxAthltcsBxAge.Size = new System.Drawing.Size(55, 28);
+            this.cmboBxAthltcsBxAge.TabIndex = 13;
             // 
             // lblEvnt
             // 
@@ -388,7 +357,7 @@
             // 
             // pnlSwmng
             // 
-            this.pnlSwmng.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlSwmng.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pnlSwmng.Controls.Add(this.btnSwmEntr);
             this.pnlSwmng.Controls.Add(this.lblSwmScnd);
             this.pnlSwmng.Controls.Add(this.lblSwmMin);
@@ -504,7 +473,6 @@
             this.cmboBxSwmBxAge.Name = "cmboBxSwmBxAge";
             this.cmboBxSwmBxAge.Size = new System.Drawing.Size(55, 28);
             this.cmboBxSwmBxAge.TabIndex = 23;
-            this.cmboBxSwmBxAge.Text = "5-";
             // 
             // lblSwmSdntAge
             // 
@@ -566,14 +534,14 @@
             this.cmboBxSwmEvnts.FormattingEnabled = true;
             this.cmboBxSwmEvnts.Location = new System.Drawing.Point(3, 95);
             this.cmboBxSwmEvnts.Name = "cmboBxSwmEvnts";
-            this.cmboBxSwmEvnts.Size = new System.Drawing.Size(120, 28);
+            this.cmboBxSwmEvnts.Size = new System.Drawing.Size(125, 28);
             this.cmboBxSwmEvnts.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(31, 67);
+            this.label4.Location = new System.Drawing.Point(33, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 25);
             this.label4.TabIndex = 16;
@@ -581,7 +549,7 @@
             // 
             // pnlCrsCntry
             // 
-            this.pnlCrsCntry.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlCrsCntry.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pnlCrsCntry.Controls.Add(this.btnCrsCntryEntr);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntryScnd);
             this.pnlCrsCntry.Controls.Add(this.lblCrsCntryMin);
@@ -722,46 +690,166 @@
             this.lblCrsCntrySdntNm.TabIndex = 26;
             this.lblCrsCntrySdntNm.Text = "Name of student";
             // 
-            // listView1
+            // listViewEnteredData
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewEnteredData.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.listViewEnteredData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmHdr1StdntNm,
             this.clmHdr2Age,
             this.clmHdr2Evnt,
             this.clmHdr3Rslt});
-            this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(505, 13);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(253, 97);
-            this.listView1.TabIndex = 14;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewEnteredData.GridLines = true;
+            this.listViewEnteredData.Location = new System.Drawing.Point(505, 13);
+            this.listViewEnteredData.Name = "listViewEnteredData";
+            this.listViewEnteredData.Size = new System.Drawing.Size(360, 200);
+            this.listViewEnteredData.TabIndex = 14;
+            this.listViewEnteredData.UseCompatibleStateImageBehavior = false;
+            this.listViewEnteredData.View = System.Windows.Forms.View.Details;
+            this.listViewEnteredData.Visible = false;
             // 
             // clmHdr1StdntNm
             // 
             this.clmHdr1StdntNm.Text = "Student name";
-            this.clmHdr1StdntNm.Width = 100;
+            this.clmHdr1StdntNm.Width = 124;
             // 
-            // clmHdr3Rslt
+            // clmHdr2Age
             // 
-            this.clmHdr3Rslt.Text = "Result";
-            this.clmHdr3Rslt.Width = 50;
+            this.clmHdr2Age.Text = "Age";
+            this.clmHdr2Age.Width = 31;
             // 
             // clmHdr2Evnt
             // 
             this.clmHdr2Evnt.Text = "Event";
             // 
-            // clmHdr2Age
+            // clmHdr3Rslt
             // 
-            this.clmHdr2Age.Text = "Age";
-            this.clmHdr2Age.Width = 40;
+            this.clmHdr3Rslt.Text = "Result";
+            this.clmHdr3Rslt.Width = 125;
+            // 
+            // athltcsDistanceAtmt2UpDn
+            // 
+            this.athltcsDistanceAtmt2UpDn.DecimalPlaces = 2;
+            this.athltcsDistanceAtmt2UpDn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.athltcsDistanceAtmt2UpDn.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.athltcsDistanceAtmt2UpDn.Location = new System.Drawing.Point(105, 157);
+            this.athltcsDistanceAtmt2UpDn.Name = "athltcsDistanceAtmt2UpDn";
+            this.athltcsDistanceAtmt2UpDn.Size = new System.Drawing.Size(70, 26);
+            this.athltcsDistanceAtmt2UpDn.TabIndex = 27;
+            this.athltcsDistanceAtmt2UpDn.Visible = false;
+            // 
+            // athltcsDistanceAtmt3UpDn
+            // 
+            this.athltcsDistanceAtmt3UpDn.DecimalPlaces = 2;
+            this.athltcsDistanceAtmt3UpDn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.athltcsDistanceAtmt3UpDn.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.athltcsDistanceAtmt3UpDn.Location = new System.Drawing.Point(190, 157);
+            this.athltcsDistanceAtmt3UpDn.Name = "athltcsDistanceAtmt3UpDn";
+            this.athltcsDistanceAtmt3UpDn.Size = new System.Drawing.Size(70, 26);
+            this.athltcsDistanceAtmt3UpDn.TabIndex = 28;
+            this.athltcsDistanceAtmt3UpDn.Visible = false;
+            // 
+            // btnRemoveEntry
+            // 
+            this.btnRemoveEntry.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnRemoveEntry.Location = new System.Drawing.Point(872, 12);
+            this.btnRemoveEntry.Name = "btnRemoveEntry";
+            this.btnRemoveEntry.Size = new System.Drawing.Size(60, 23);
+            this.btnRemoveEntry.TabIndex = 15;
+            this.btnRemoveEntry.Text = "Remove";
+            this.btnRemoveEntry.UseVisualStyleBackColor = true;
+            this.btnRemoveEntry.Visible = false;
+            this.btnRemoveEntry.Click += new System.EventHandler(this.btnRemoveEntry_Click);
+            // 
+            // btnSort
+            // 
+            this.btnSort.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnSort.Location = new System.Drawing.Point(872, 35);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(60, 23);
+            this.btnSort.TabIndex = 16;
+            this.btnSort.Text = "Sort";
+            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Visible = false;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
+            // 
+            // cmboBxAgeSort
+            // 
+            this.cmboBxAgeSort.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmboBxAgeSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxAgeSort.FormattingEnabled = true;
+            this.cmboBxAgeSort.Items.AddRange(new object[] {
+            "5-",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18+"});
+            this.cmboBxAgeSort.Location = new System.Drawing.Point(872, 65);
+            this.cmboBxAgeSort.Name = "cmboBxAgeSort";
+            this.cmboBxAgeSort.Size = new System.Drawing.Size(55, 28);
+            this.cmboBxAgeSort.TabIndex = 17;
+            this.cmboBxAgeSort.Visible = false;
+            // 
+            // cmboBxEventSort
+            // 
+            this.cmboBxEventSort.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmboBxEventSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmboBxEventSort.FormattingEnabled = true;
+            this.cmboBxEventSort.Items.AddRange(new object[] {
+            "Freestyle 50m",
+            "Freestyle 100m",
+            "Freestyle 200m",
+            "Freestyle 400m",
+            "Freestyle 800m",
+            "Freestyle 1500m",
+            "Breast stroke 50m",
+            "Back stroke 50m",
+            "Butterfly 50m",
+            "Individual medley",
+            "Running 100m",
+            "Running 200m",
+            "Running 400m",
+            "Running 800m",
+            "Running 1500m",
+            "High jump",
+            "Long jump",
+            "Shot put",
+            "Javelin",
+            "Discus",
+            "Cross country"});
+            this.cmboBxEventSort.Location = new System.Drawing.Point(872, 93);
+            this.cmboBxEventSort.Name = "cmboBxEventSort";
+            this.cmboBxEventSort.Size = new System.Drawing.Size(135, 28);
+            this.cmboBxEventSort.TabIndex = 18;
+            this.cmboBxEventSort.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listView1);
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ClientSize = new System.Drawing.Size(961, 450);
+            this.Controls.Add(this.cmboBxEventSort);
+            this.Controls.Add(this.cmboBxAgeSort);
+            this.Controls.Add(this.btnSort);
+            this.Controls.Add(this.btnRemoveEntry);
+            this.Controls.Add(this.listViewEnteredData);
             this.Controls.Add(this.pnlCrsCntry);
             this.Controls.Add(this.pnlSwmng);
             this.Controls.Add(this.pnlEvnt);
@@ -774,8 +862,7 @@
             this.pnlAthltcs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmScMilliUpDn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.athltcsTmMUpDn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceUpDn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrcUpDnAtmpt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceAtmt1UpDn)).EndInit();
             this.pnlEvnt.ResumeLayout(false);
             this.pnlEvnt.PerformLayout();
             this.pnlSwmng.ResumeLayout(false);
@@ -786,6 +873,8 @@
             this.pnlCrsCntry.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.crsCntryTmScMilliUpDn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crsCntryTmMinUpDn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceAtmt2UpDn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athltcsDistanceAtmt3UpDn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -794,12 +883,10 @@
 
         private System.Windows.Forms.Panel pnlAthltcs;
         private System.Windows.Forms.Label lblTm;
-        private System.Windows.Forms.NumericUpDown nmrcUpDnAtmpt;
-        private System.Windows.Forms.Label lblAtmpt;
         private System.Windows.Forms.Label lblEvnt;
-        private System.Windows.Forms.ComboBox cmboBxAthltsBxAge;
+        private System.Windows.Forms.ComboBox cmboBxAthltcsBxAge;
         private System.Windows.Forms.Label lblAthltsSdntAge;
-        private System.Windows.Forms.TextBox txtBxAthltsSdntName;
+        private System.Windows.Forms.TextBox txtBxAthltcsSdntName;
         private System.Windows.Forms.Label lblSdntNm;
         private System.Windows.Forms.Panel pnlEvnt;
         private System.Windows.Forms.ComboBox cmboBxEvnt;
@@ -823,12 +910,12 @@
         private System.Windows.Forms.Label lblCrsCntrySdntAge;
         private System.Windows.Forms.TextBox txtBxCrsCntrySdntName;
         private System.Windows.Forms.Label lblCrsCntrySdntNm;
-        private System.Windows.Forms.NumericUpDown athltcsDistanceUpDn;
+        private System.Windows.Forms.NumericUpDown athltcsDistanceAtmt1UpDn;
         private System.Windows.Forms.Label lblDstnc;
         private System.Windows.Forms.NumericUpDown athltcsTmScMilliUpDn;
         private System.Windows.Forms.NumericUpDown athltcsTmMUpDn;
-        private System.Windows.Forms.Label lblScndsMilli;
-        private System.Windows.Forms.Label lblMinutes;
+        private System.Windows.Forms.Label lblAthltcsScndsMilli;
+        private System.Windows.Forms.Label lblAthltcsMinutes;
         private System.Windows.Forms.Label lblSwmScnd;
         private System.Windows.Forms.Label lblSwmMin;
         private System.Windows.Forms.NumericUpDown swmTmScMilliUpDn;
@@ -837,7 +924,7 @@
         private System.Windows.Forms.Label lblCrsCntryMin;
         private System.Windows.Forms.NumericUpDown crsCntryTmScMilliUpDn;
         private System.Windows.Forms.NumericUpDown crsCntryTmMinUpDn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewEnteredData;
         private System.Windows.Forms.ColumnHeader clmHdr1StdntNm;
         private System.Windows.Forms.ColumnHeader clmHdr3Rslt;
         private System.Windows.Forms.Button btnAthltcsEntr;
@@ -845,6 +932,12 @@
         private System.Windows.Forms.Button btnCrsCntryEntr;
         private System.Windows.Forms.ColumnHeader clmHdr2Evnt;
         private System.Windows.Forms.ColumnHeader clmHdr2Age;
+        private System.Windows.Forms.NumericUpDown athltcsDistanceAtmt3UpDn;
+        private System.Windows.Forms.NumericUpDown athltcsDistanceAtmt2UpDn;
+        private System.Windows.Forms.Button btnRemoveEntry;
+        private System.Windows.Forms.Button btnSort;
+        private System.Windows.Forms.ComboBox cmboBxAgeSort;
+        private System.Windows.Forms.ComboBox cmboBxEventSort;
     }
 }
 

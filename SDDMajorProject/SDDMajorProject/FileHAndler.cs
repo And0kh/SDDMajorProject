@@ -13,7 +13,7 @@ namespace SDDMajorProject
         public static string[] FlText;
 
         public static void FilePresent(){
-            string ExePath;
+            //string ExePath;
         }
 
         public static void Read(string Event){
